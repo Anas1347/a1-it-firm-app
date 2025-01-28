@@ -6,38 +6,42 @@ import 'react-tabs/style/react-tabs.css';
 const ServicesSection = () => {
   return (
     <div className="py-16 px-6 bg-gray-50">
-      <h2 className="text-3xl font-bold text-center mb-8 text-blue-600">
+      <h2 className="text-4xl font-bold text-center mb-6 text-blue-600">
         Our Services
       </h2>
+      <h2 className="text-2xl font-semibold text-center mb-8 text-blue-800">
+        How Does It Work
+      </h2>
+
       <Tabs>
-        <TabList className="flex justify-center space-x-6 mb-6">
+        <TabList className="flex flex-wrap lg:justify-center space-x-6 mb-6 md:space-x-0 md:flex-col lg:flex-row sm:flex-row">
           <Tab
             className="text-lg font-semibold text-gray-700 p-2 cursor-pointer hover:text-blue-600 hover:border-b-2 hover:border-blue-600 transition-all"
             selectedClassName="bg-blue-200"
           >
             <FaBullhorn size={24} />
-            <span>Lead Generation</span>
+            <span className="block mt-2 md:inline-block">Lead Generation</span>
           </Tab>
           <Tab
             className="text-lg font-semibold text-gray-700 p-2 cursor-pointer hover:text-blue-600 hover:border-b-2 hover:border-blue-600 transition-all"
             selectedClassName="bg-blue-200"
           >
             <FaLaptopCode size={24} />
-            <span>Web Development</span>
+            <span className="block mt-2 md:inline-block">Web Development</span>
           </Tab>
           <Tab
             className="text-lg font-semibold text-gray-700 p-2 cursor-pointer hover:text-blue-600 hover:border-b-2 hover:border-blue-600 transition-all"
             selectedClassName="bg-blue-200"
           >
             <FaMailBulk size={24} />
-            <span>Email Marketing</span>
+            <span className="block mt-2 md:inline-block">Email Marketing</span>
           </Tab>
           <Tab
             className="text-lg font-semibold text-gray-700 p-2 cursor-pointer hover:text-blue-600 hover:border-b-2 hover:border-blue-600 transition-all"
             selectedClassName="bg-blue-200"
           >
             <FaSearch size={24} />
-            <span>Search Engine Optimization</span>
+            <span className="block mt-2 md:inline-block">Search Engine Optimization</span>
           </Tab>
         </TabList>
 

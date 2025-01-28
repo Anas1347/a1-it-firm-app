@@ -6,21 +6,21 @@ const Navbar = () => {
   return (
     <div className="navbar bg-base-100 shadow-sm">
       {/* Navbar Start */}
-      <div className="navbar-start  ">
+      <Link   to="/" className="navbar-start  ">
         <img
           className="w-8 h-8 "
           src="https://i.ibb.co.com/g7LRK1W/a1-it-firm-logo.png"
           alt="A1 IT Firm"
         />
-        <Link
-          to="/"
+        <p
+        
           className="text-xl font-bold transition-colors duration-300 m-2 mt-4"
         >
           <span className="text-blue-600">A1</span>{" "}
           <span className="text-yellow-600">IT</span>{" "}
           <span className="text-red-600">Firm</span>
-        </Link>
-      </div>
+        </p>
+      </Link>
 
       {/* Navbar Center */}
       <div className="navbar-center hidden lg:flex">
@@ -42,7 +42,7 @@ const Navbar = () => {
               <ul className="p-2 bg-base-100 shadow-md rounded-md group-focus-within:block hidden">
                 <li>
                   <NavLink
-                    to="#web-dev"
+                    to="lead-generation"
                     className="block text-gray-700 hover:text-primary py-2 px-4 rounded-md"
                     activeClassName="text-primary"
                   >
@@ -51,7 +51,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="#app-dev"
+                    to="web-development"
                     className="block text-gray-700 hover:text-primary py-2 px-4 rounded-md"
                     activeClassName="text-primary"
                   >
@@ -60,7 +60,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="#cloud"
+                    to="email-marketing"
                     className="block text-gray-700 hover:text-primary py-2 px-4 rounded-md"
                     activeClassName="text-primary"
                   >
@@ -69,7 +69,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="#SEO"
+                    to="search-engine-optimization"
                     className="block text-gray-700 hover:text-primary py-2 px-4 rounded-md"
                     activeClassName="text-primary"
                   >
@@ -81,7 +81,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="#about"
+              to="about-us"
               className="text-base text-gray-700 hover:text-primary transition-colors duration-300 px-4 py-2 rounded-md"
               activeClassName="text-primary"
             >
@@ -90,7 +90,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="#contact"
+              to="contact"
               className="text-base text-gray-700 hover:text-primary transition-colors duration-300 px-4 py-2 rounded-md"
               activeClassName="text-primary"
             >
@@ -144,7 +144,7 @@ const Navbar = () => {
               <ul className="p-2 bg-base-100 shadow-md rounded-md">
                 <li>
                   <NavLink
-                    to="#web-dev"
+                    to="lead-generation"
                     className="block text-gray-700 hover:text-primary py-2 px-4 rounded-md"
                     activeClassName="text-primary"
                   >
@@ -153,7 +153,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="#app-dev"
+                    to="web-development"
                     className="block text-gray-700 hover:text-primary py-2 px-4 rounded-md"
                     activeClassName="text-primary"
                   >
@@ -162,7 +162,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="#cloud"
+                    to="email-marketing"
                     className="block text-gray-700 hover:text-primary py-2 px-4 rounded-md"
                     activeClassName="text-primary"
                   >
@@ -171,7 +171,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="#SEO"
+                    to="search-engine-optimization"
                     className="block text-gray-700 hover:text-primary py-2 px-4 rounded-md"
                     activeClassName="text-primary"
                   >
@@ -182,7 +182,7 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                to="#about"
+                to="about-us"
                 className="text-gray-700 hover:text-primary py-2 px-4 rounded-md"
                 activeClassName="text-primary"
               >
@@ -191,7 +191,7 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                to="#contact"
+                to="contact"
                 className="text-gray-700 hover:text-primary py-2 px-4 rounded-md"
                 activeClassName="text-primary"
               >
