@@ -27,7 +27,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">
           <li>
             <NavLink
-              to="#home"
+              to="/"
               className="text-base text-gray-700 hover:text-primary transition-colors duration-300 px-4 py-2 rounded-md"
               activeClassName="text-primary"
             >
@@ -126,7 +126,7 @@ const Navbar = () => {
           >
             <li>
               <NavLink
-                to="#home"
+                to="/"
                 className="text-gray-700 hover:text-primary py-2 px-4 rounded-md"
                 activeClassName="text-primary"
               >
