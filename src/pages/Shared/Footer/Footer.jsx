@@ -10,8 +10,7 @@ import {
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-   
-     <footer className="bg-gray-800 text-white p-8">
+    <footer className="bg-gray-800 text-white p-8">
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
         {/* Logo & Description */}
         <div to="/" className="flex flex-col items-center justify-center">
@@ -30,7 +29,6 @@ const Footer = () => {
           </p>
         </div>
 
-    
         <div className="flex flex-col items-center justify-center">
           <ul className="space-y-2">
             <li>
@@ -49,10 +47,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link
-                to="/"
-                className="text-sm hover:text-blue-400"
-              >
+              <Link to="/" className="text-sm hover:text-blue-400">
                 Privacy Policy
               </Link>
             </li>
@@ -62,25 +57,26 @@ const Footer = () => {
         {/* Social Media Links */}
         <div className="flex flex-col items-center justify-center">
           <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
-          <div className="flex space-x-4">
+          <div className="flex space-x-8">
   <a
     href="https://www.facebook.com/a1itfirm"
-    className="text-blue-600 hover:text-blue-400"
+    className="text-blue-500 hover:text-blue-300 transition-colors duration-300"
     target="_blank"
     rel="noopener noreferrer"
   >
-    <FaFacebookF size={20} />
+    <FaFacebookF size={32} />
   </a>
 
   <a
     href="https://www.linkedin.com/company/a1itfirm"
-    className="text-blue-700 hover:text-blue-500"
+    className="text-blue-600 hover:text-blue-400 transition-colors duration-300"
     target="_blank"
     rel="noopener noreferrer"
   >
-    <FaLinkedinIn size={20} />
+    <FaLinkedinIn size={32} />
   </a>
 </div>
+
 
         </div>
       </div>
@@ -96,7 +92,6 @@ const Footer = () => {
         </p>
       </div>
     </footer>
-
   );
 };
 
