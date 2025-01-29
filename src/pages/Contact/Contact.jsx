@@ -86,9 +86,9 @@ const Contact = () => {
         <div className="flex flex-col md:flex-row justify-between items-start gap-10 md:gap-20">
           <div className="flex-1 bg-white shadow-lg rounded-lg p-8">
             <h4 className="text-xl font-semibold text-gray-800 mb-4">Company Name</h4>
-            <p className="text-gray-600">Awesome Company</p>
+            <p className="text-gray-600">A1 IT Firm</p>
             <h4 className="text-xl font-semibold text-gray-800 mt-6 mb-4">Email</h4>
-            <p className="text-gray-600">contact@awesomecompany.com</p>
+            <p className="text-gray-600">contact@a1itfirm.com</p>
             <h4 className="text-xl font-semibold text-gray-800 mt-6 mb-4">Phone Number</h4>
             <p className="text-gray-600">+123 456 7890</p>
             <h4 className="text-xl font-semibold text-gray-800 mt-6 mb-4">Address</h4>

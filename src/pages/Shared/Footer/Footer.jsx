@@ -29,17 +29,16 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Important Links */}
+    
         <div className="flex flex-col items-center justify-center">
-          <h3 className="text-lg font-semibold mb-4">Important Links</h3>
           <ul className="space-y-2">
             <li>
-              <Link to="/about" className="text-sm hover:text-blue-400">
+              <Link to="/about-us" className="text-sm hover:text-blue-400">
                 About Us
               </Link>
             </li>
             <li>
-              <Link to="/services" className="text-sm hover:text-blue-400">
+              <Link to="/" className="text-sm hover:text-blue-400">
                 Services
               </Link>
             </li>
@@ -50,7 +49,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                to="/privacy-policy"
+                to="/"
                 className="text-sm hover:text-blue-400"
               >
                 Privacy Policy
