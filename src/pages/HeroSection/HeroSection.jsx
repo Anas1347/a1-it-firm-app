@@ -17,7 +17,7 @@ const HeroSection = () => {
   return (
     <div
       ref={sectionRef}
-      className="flex flex-col lg:flex-row justify-center items-center bg-blue-100 py-10 px-6 lg:px-10"
+      className="flex flex-col lg:flex-row justify-center items-center py-10 px-6 lg:px-10"
     >
       {/* Left side: Lead Generation Description */}
       <motion.div

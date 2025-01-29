@@ -4,7 +4,7 @@ import { FaBullhorn, FaLaptopCode, FaMailBulk, FaSearch } from 'react-icons/fa';
 
 const Pricing = () => {
   return (
-    <div className="py-16 px-6 bg-gray-50">
+    <div className="py-16 px-6 ">
       <h2 className="text-3xl font-bold text-center mb-8 text-blue-600">
         Our Pricing
       </h2>

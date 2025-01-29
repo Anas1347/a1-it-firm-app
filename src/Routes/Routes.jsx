@@ -7,6 +7,7 @@ import WebDevelopment from "../pages/Services/WebDevelopment/WebDevelopment";
 import EmailMarketing from "../pages/Services/EmailMarketing/EmailMarketing";
 import SEO from "../pages/Services/SEO/SEO";
 import Contact from "../pages/Contact/Contact";
+import Error from "../pages/Error/Error";
 
 export const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ export const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact></Contact>,
+      },
+      {
+        path: "*",
+        element: <Error />,
       },
     ],
   },

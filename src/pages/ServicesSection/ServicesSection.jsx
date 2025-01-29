@@ -5,7 +5,7 @@ import 'react-tabs/style/react-tabs.css';
 
 const ServicesSection = () => {
   return (
-    <div className="py-16 px-6 bg-gray-50">
+    <div className="py-16 px-6 ">
       <h2 className="text-4xl font-bold text-center mb-6 text-blue-600">
         Our Services
       </h2>
