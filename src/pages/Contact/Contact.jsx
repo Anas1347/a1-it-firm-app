@@ -90,7 +90,7 @@ const Contact = () => {
             <h4 className="text-xl font-semibold text-gray-800 mt-6 mb-4">Email</h4>
             <p className="text-gray-600">contact@a1itfirm.com</p>
             <h4 className="text-xl font-semibold text-gray-800 mt-6 mb-4">Phone Number</h4>
-            <p className="text-gray-600">+123 456 7890</p>
+            <p className="text-gray-600">+880 1819946104</p>
             <h4 className="text-xl font-semibold text-gray-800 mt-6 mb-4">Address</h4>
             <p className="text-gray-600">House No: 34, 1 Shahid Faroque Rd, Dhaka 1204</p>
           </div>

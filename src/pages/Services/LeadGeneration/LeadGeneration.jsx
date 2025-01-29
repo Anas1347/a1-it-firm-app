@@ -4,9 +4,6 @@ import animationData from "../../../assets/lead-generation.json";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import {
   FaAmazon,
-  FaBullhorn,
-  FaLaptopCode,
-  FaMailBulk,
   FaShopify,
 } from "react-icons/fa";
 import { FaMapLocation } from "react-icons/fa6";
