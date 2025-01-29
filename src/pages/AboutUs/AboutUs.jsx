@@ -3,7 +3,7 @@ import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 
 const AboutUs = () => {
     return (
-        <div className="bg-gray-100 p-8">
+        <div className="bg-gray-100 p-8 ">
             <div className="container mx-auto">
                 {/* Flex container for larger screens */}
                 <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-8">

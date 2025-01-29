@@ -32,7 +32,7 @@ const ClientReviews = () => {
   ];
 
   return (
-    <div className="bg-gray-100 py-10 px-6">
+    <div className="container mx-auto py-10 px-6">
       <h2 className="text-3xl font-bold text-center text-blue-600 mb-6">
         What Clients Say About Us
       </h2>

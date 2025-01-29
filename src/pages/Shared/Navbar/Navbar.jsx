@@ -4,7 +4,7 @@ import MyProfile from "../../../components/MyProfile/MyProfile";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar container mx-auto bg-base-100 ">
       {/* Navbar Start */}
       <Link   to="/" className="navbar-start  ">
         <img
@@ -202,7 +202,7 @@ const Navbar = () => {
         </div>
 
         {/* Profile Dropdown */}
-        <MyProfile></MyProfile>
+         <MyProfile></MyProfile> 
       </div>
     </div>
   );

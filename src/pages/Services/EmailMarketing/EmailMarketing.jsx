@@ -10,9 +10,9 @@ const EmailMarketing = () => {
   };
 
   return (
-    <div className="bg-gray-100 py-10 px-6">
+    <div className=" bg-gray-100 py-10 px-6">
       {/* Description Section with Lottie Animation */}
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-8 mb-12">
+      <div className="flex  flex-col lg:flex-row items-center justify-between gap-8 mb-12">
         <div className="text-center lg:text-left flex-1">
           <h1 className="text-3xl sm:text-4xl font-bold text-green-700 mb-4">
             Powerful Email Marketing Services
