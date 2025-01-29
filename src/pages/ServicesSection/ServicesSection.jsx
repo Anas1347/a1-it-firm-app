@@ -1,8 +1,16 @@
 import React from "react";
 import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
-import { FaBullhorn, FaLaptopCode, FaMailBulk, FaSearch,FaChartLine, FaCode, FaEnvelope, } from "react-icons/fa";
+import {
+  FaBullhorn,
+  FaLaptopCode,
+  FaMailBulk,
+  FaSearch,
+  FaChartLine,
+  FaCode,
+  FaEnvelope,
+} from "react-icons/fa";
 import "react-tabs/style/react-tabs.css";
- import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const cardVariants = {
@@ -21,46 +29,43 @@ const ServicesSection = () => {
       </h2>
 
       <Tabs>
-      <TabList className="flex flex-wrap lg:justify-center space-x-6 mb-6 md:space-x-0 md:flex-col lg:flex-row sm:flex-row lg:gap-6 sm:gap-0">
-  <Tab
-    className="text-lg font-semibold text-gray-700 p-4 cursor-pointer flex items-center justify-center gap-4 transition-all duration-300 transform hover:text-blue-600 hover:border-b-2 hover:border-blue-600 hover:scale-105"
-    selectedClassName="bg-blue-600 text-white font-bold transform scale-105 border-b-4 border-blue-400"
-  >
-    <FaBullhorn size={24} />
-    <span className="block mt-2 md:inline-block">Lead Generation</span>
-  </Tab>
-  <Tab
-    className="text-lg font-semibold text-gray-700 p-4 cursor-pointer flex items-center justify-center gap-4 transition-all duration-300 transform hover:text-blue-600 hover:border-b-2 hover:border-blue-600 hover:scale-105"
-    selectedClassName="bg-blue-600 text-white font-bold transform scale-105 border-b-4 border-blue-400"
-  >
-    <FaLaptopCode size={24} />
-    <span className="block mt-2 md:inline-block">Web Development</span>
-  </Tab>
-  <Tab
-    className="text-lg font-semibold text-gray-700 p-4 cursor-pointer flex items-center justify-center gap-4 transition-all duration-300 transform hover:text-blue-600 hover:border-b-2 hover:border-blue-600 hover:scale-105"
-    selectedClassName="bg-blue-600 text-white font-bold transform scale-105 border-b-4 border-blue-400"
-  >
-    <FaMailBulk size={24} />
-    <span className="block mt-2 md:inline-block">Email Marketing</span>
-  </Tab>
-  <Tab
-    className="text-lg font-semibold text-gray-700 p-4 cursor-pointer flex items-center justify-center gap-4 transition-all duration-300 transform hover:text-blue-600 hover:border-b-2 hover:border-blue-600 hover:scale-105"
-    selectedClassName="bg-blue-600 text-white font-bold transform scale-105 border-b-4 border-blue-400"
-  >
-    <FaSearch size={24} />
-    <span className="block mt-2 md:inline-block">
-      Search Engine Optimization
-    </span>
-  </Tab>
-</TabList>
+        <TabList className="flex flex-wrap lg:justify-center space-x-6 mb-6 md:space-x-0 md:flex-col lg:flex-row sm:flex-row lg:gap-6 sm:gap-0">
+          <Tab
+            className="text-lg font-semibold text-gray-700 p-4 cursor-pointer flex items-center justify-center gap-4 transition-all duration-300 transform  hover:border-b-2 hover:border-blue-600 hover:scale-105"
+            selectedClassName="bg-blue-600 text-white font-bold transform scale-105 border-b-4 border-blue-400"
+          >
+            <FaBullhorn size={24} />
+            <span className="block mt-2 md:inline-block">Lead Generation</span>
+          </Tab>
+          <Tab
+            className="text-lg font-semibold text-gray-700 p-4 cursor-pointer flex items-center justify-center gap-4 transition-all duration-300 transform  hover:border-b-2 hover:border-blue-600 hover:scale-105"
+            selectedClassName="bg-blue-600 text-white font-bold transform scale-105 border-b-4 border-blue-400"
+          >
+            <FaLaptopCode size={24} />
+            <span className="block mt-2 md:inline-block">Web Development</span>
+          </Tab>
+          <Tab
+            className="text-lg font-semibold text-gray-700 p-4 cursor-pointer flex items-center justify-center gap-4 transition-all duration-300 transform  hover:border-b-2 hover:border-blue-600 hover:scale-105"
+            selectedClassName="bg-blue-600 text-white font-bold transform scale-105 border-b-4 border-blue-400"
+          >
+            <FaMailBulk size={24} />
+            <span className="block mt-2 md:inline-block">Email Marketing</span>
+          </Tab>
+          <Tab
+            className="text-lg font-semibold text-gray-700 p-4 cursor-pointer flex items-center justify-center gap-4 transition-all duration-300 transform  hover:border-b-2 hover:border-blue-600 hover:scale-105"
+            selectedClassName="bg-blue-600 text-white font-bold transform scale-105 border-b-4 border-blue-400"
+          >
+            <FaSearch size={24} />
+            <span className="block mt-2 md:inline-block">
+              Search Engine Optimization
+            </span>
+          </Tab>
+        </TabList>
 
-
-
-
-
-        <TabPanel>
+       <div className="flex justify-center">
+       <TabPanel>
           <motion.div
-            className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 max-w-sm"
+            className="bg-white p-6  rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 max-w-sm"
             variants={cardVariants}
             initial="hidden"
             animate="visible"
@@ -77,7 +82,7 @@ const ServicesSection = () => {
               online strategies. Grow your customer base effectively.
             </p>
             <Link
-              to='lead-generation'
+              to="lead-generation"
               className="inline-block mt-4 text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-300"
             >
               Learn More
@@ -165,6 +170,7 @@ const ServicesSection = () => {
             </Link>
           </motion.div>
         </TabPanel>
+       </div>
       </Tabs>
     </div>
   );
