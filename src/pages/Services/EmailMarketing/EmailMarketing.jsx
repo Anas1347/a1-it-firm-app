@@ -34,15 +34,15 @@ const EmailMarketing = () => {
         />
         <meta
           property="og:image"
-          content="https://example.com/email-marketing-image.jpg" // Replace with your image
+          content="https://cdn.a1itfirm.com/a1-it-firm-logo.png" // Replace with your image
         />
         <meta
           property="og:url"
-          content="https://yourwebsite.com/email-marketing"
+          content="https://www.a1itfirm.com/email-marketing"
         />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://yourwebsite.com/email-marketing" />
+        <link rel="canonical" href="https://www.a1itfirm.com/email-marketing" />
       </Helmet>
 
       <div className="bg-gray-100">

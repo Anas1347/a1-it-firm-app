@@ -15,31 +15,36 @@ const LeadGeneration = () => {
 
   return (
     <>
- <Helmet>
-      <title>Lead Generation Service - A1 IT Firm</title>
-      <meta
-        name="description"
-        content="Boost your business with A1 IT Firm's expert Lead Generation services. We help you target the right audience and convert them into valuable leads, accelerating your sales growth."
-      />
-      <meta
-        name="keywords"
-        content="lead generation, digital marketing, B2B lead generation, sales leads, inbound marketing, generate leads, target audience"
-      />
-      <meta property="og:title" content="Lead Generation Service - A1 IT Firm" />
-      <meta
-        property="og:description"
-        content="Boost your business with A1 IT Firm's expert Lead Generation services. We help you target the right audience and convert them into valuable leads."
-      />
-      <meta
-        property="og:image"
-        content="https://example.com/lead-generation-image.jpg" // Replace with your image
-      />
-      <meta property="og:url" content="https://yourwebsite.com/lead-generation" />
-      <meta property="og:type" content="website" />
-      <meta name="robots" content="index, follow" />
-      <link rel="canonical" href="https://yourwebsite.com/lead-generation" />
-    </Helmet>
-
+      <Helmet>
+        <title>Lead Generation Service - A1 IT Firm</title>
+        <meta
+          name="description"
+          content="Boost your business with A1 IT Firm's expert Lead Generation services. We help you target the right audience and convert them into valuable leads, accelerating your sales growth."
+        />
+        <meta
+          name="keywords"
+          content="lead generation, digital marketing, B2B lead generation, sales leads, inbound marketing, generate leads, target audience"
+        />
+        <meta
+          property="og:title"
+          content="Lead Generation Service - A1 IT Firm"
+        />
+        <meta
+          property="og:description"
+          content="Boost your business with A1 IT Firm's expert Lead Generation services. We help you target the right audience and convert them into valuable leads."
+        />
+        <meta
+          property="og:image"
+          content="https://cdn.a1itfirm.com/a1-it-firm-logo.png" // Replace with your image
+        />
+        <meta
+          property="og:url"
+          content="https://www.a1itfirm.com/lead-generation"
+        />
+        <meta property="og:type" content="website" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.a1itfirm.com/lead-generation" />
+      </Helmet>
 
       <div className="bg-gray-100">
         <div className="container mx-auto py-10 px-6">

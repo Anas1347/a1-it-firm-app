@@ -23,7 +23,7 @@ const Footer = () => {
             <span className="text-red-600">Firm</span>
           </h2>
           <p className="text-sm mt-2">
-            Providing top-notch IT solutions since 2023.
+            Providing top-notch IT solutions since 2021.
           </p>
         </div>
 

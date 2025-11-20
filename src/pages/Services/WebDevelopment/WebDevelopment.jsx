@@ -34,15 +34,15 @@ const WebDevelopment = () => {
         />
         <meta
           property="og:image"
-          content="https://example.com/web-development-image.jpg" // Replace with your image
+          content="https://cdn.a1itfirm.com/a1-it-firm-logo.png" // Replace with your image
         />
         <meta
           property="og:url"
-          content="https://yourwebsite.com/web-development"
+          content="https://www.a1itfirm.com/web-development"
         />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://yourwebsite.com/web-development" />
+        <link rel="canonical" href="https://www.a1itfirm.com/web-development" />
       </Helmet>
 
       <div className="bg-gray-100">

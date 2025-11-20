@@ -23,7 +23,7 @@ const Home = () => {
         {/* Open Graph tags for social media sharing */}
         <meta
           property="og:title"
-          content="A1 IT Firm - Web Development & Digital Marketing Services"
+          content="A1 IT Firm - Digital Marketing Web Development Services"
         />
         <meta
           property="og:description"
@@ -32,7 +32,7 @@ const Home = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://www.a1itfirm.com/path_to_image.jpg" // Replace with actual image URL
+          content="https://cdn.a1itfirm.com/a1-it-firm-logo.png" // Replace with actual image URL
         />
         <meta property="og:url" content="https://www.a1itfirm.com" />
         <meta property="og:site_name" content="A1 IT Firm" />
@@ -49,7 +49,7 @@ const Home = () => {
         />
         <meta
           name="twitter:image"
-          content="https://www.a1itfirm.com/path_to_image.jpg"
+          content="https://cdn.a1itfirm.com/a1-it-firm-logo.png"
         />{" "}
         {/* Replace with actual image URL */}
         {/* Canonical link for the page */}

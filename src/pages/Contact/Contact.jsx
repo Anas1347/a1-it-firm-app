@@ -30,7 +30,10 @@ const Contact = () => {
           property="og:description"
           content="Reach out to A1 IT Firm for web development, SEO, and digital marketing services. Our team will assist you in achieving your business goals."
         />
-        <meta property="og:image" content="URL_to_image_here" />
+        <meta
+          property="og:image"
+          content="https://cdn.a1itfirm.com/a1-it-firm-logo.png"
+        />
         <meta property="og:url" content="https://www.a1itfirm.com/contact" />
         <meta name="twitter:title" content="Contact Us - A1 IT Firm" />
         <meta

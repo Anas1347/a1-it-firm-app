@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "react-lottie";
-import animationData from "../../../assets/seo.json"; 
+import animationData from "../../../assets/seo.json";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import { FaGoogle, FaLink, FaSearch } from "react-icons/fa";
 import { Helmet } from "react-helmet";
@@ -31,12 +31,18 @@ const SEO = () => {
         />
         <meta
           property="og:image"
-          content="https://example.com/seo-image.jpg" 
+          content="https://cdn.a1itfirm.com/a1-it-firm-logo.png"
         />
-        <meta property="og:url" content="https://yourwebsite.com/seo" />
+        <meta
+          property="og:url"
+          content="https://www.a1itfirm.com/search-engine-optimization"
+        />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://yourwebsite.com/seo" />
+        <link
+          rel="canonical"
+          href="https://www.a1itfirm.com/search-engine-optimization"
+        />
       </Helmet>
 
       <div className="bg-gray-100">
