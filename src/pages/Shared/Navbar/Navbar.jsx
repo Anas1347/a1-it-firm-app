@@ -199,8 +199,8 @@ const Navbar = () => {
             </ul>
           </div>
 
-          {/* Profile Dropdown */}
-          <MyProfile></MyProfile>
+          {/* Profile Dropdown
+          <MyProfile></MyProfile> */}
         </div>
       </div>
     </div>

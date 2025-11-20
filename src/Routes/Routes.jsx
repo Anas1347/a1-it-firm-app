@@ -1,51 +1,36 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
+import { lazy } from "react";
 import MainLayout from "../MainLayout/MainLayout";
-import Home from "../pages/Home/Home";
-import AboutUs from "../pages/AboutUs/AboutUs";
-import LeadGeneration from "../pages/Services/LeadGeneration/LeadGeneration";
-import WebDevelopment from "../pages/Services/WebDevelopment/WebDevelopment";
-import EmailMarketing from "../pages/Services/EmailMarketing/EmailMarketing";
-import SEO from "../pages/Services/SEO/SEO";
-import Contact from "../pages/Contact/Contact";
-import Error from "../pages/Error/Error";
+
+// Lazy load all pages
+const Home = lazy(() => import("../pages/Home/Home"));
+const AboutUs = lazy(() => import("../pages/AboutUs/AboutUs"));
+const LeadGeneration = lazy(() =>
+  import("../pages/Services/LeadGeneration/LeadGeneration")
+);
+const WebDevelopment = lazy(() =>
+  import("../pages/Services/WebDevelopment/WebDevelopment")
+);
+const EmailMarketing = lazy(() =>
+  import("../pages/Services/EmailMarketing/EmailMarketing")
+);
+const SEO = lazy(() => import("../pages/Services/SEO/SEO"));
+const Contact = lazy(() => import("../pages/Contact/Contact"));
+const ErrorPage = lazy(() => import("../pages/Error/Error"));
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout></MainLayout>,
+    element: <MainLayout />,
     children: [
-      {
-        path: "/",
-        element: <Home></Home>,
-      },
-      {
-        path: "about-us",
-        element: <AboutUs></AboutUs>,
-      },
-      {
-        path: "lead-generation",
-        element: <LeadGeneration></LeadGeneration>,
-      },
-      {
-        path: "web-development",
-        element: <WebDevelopment></WebDevelopment>,
-      },
-      {
-        path: "email-marketing",
-        element: <EmailMarketing></EmailMarketing>,
-      },
-      {
-        path: "search-engine-optimization",
-        element: <SEO></SEO>,
-      },
-      {
-        path: "contact",
-        element: <Contact></Contact>,
-      },
-      {
-        path: "*",
-        element: <Error />,
-      },
+      { index: true, element: <Home /> },
+      { path: "about-us", element: <AboutUs /> },
+      { path: "lead-generation", element: <LeadGeneration /> },
+      { path: "web-development", element: <WebDevelopment /> },
+      { path: "email-marketing", element: <EmailMarketing /> },
+      { path: "search-engine-optimization", element: <SEO /> },
+      { path: "contact", element: <Contact /> },
+      { path: "*", element: <ErrorPage /> },
     ],
   },
 ]);
