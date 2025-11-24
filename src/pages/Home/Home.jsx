@@ -9,59 +9,50 @@ const Home = () => {
   return (
     <div>
       <Helmet>
-        <title>A1 IT Firm - Lead Generation & Web Development</title>
-        <meta
-          name="description"
-          content="A1 IT Firm offers professional web development, responsive design, and digital marketing services to help your business grow online. Contact us for custom web solutions and SEO strategies."
-        />
-        <meta
-          name="keywords"
-          content="web development, IT firm, professional web design, digital marketing, SEO, responsive websites, custom web solutions, e-commerce development, branding, logo design"
-        />
-        <meta name="author" content="A1 IT Firm" />
-        <meta name="robots" content="index, follow" />
-        {/* Open Graph tags for social media sharing */}
-        <meta
-          property="og:title"
-          content="A1 IT Firm - Digital Marketing Web Development Services"
-        />
-        <meta
-          property="og:description"
-          content="A1 IT Firm offers professional web development, responsive design, and digital marketing services to help your business grow online. Contact us for custom web solutions and SEO strategies."
-        />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://cdn.a1itfirm.com/a1-it-firm-logo.png" // Replace with actual image URL
-        />
-        <meta property="og:url" content="https://www.a1itfirm.com" />
-        <meta property="og:site_name" content="A1 IT Firm" />
-        {/* Twitter Card data */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content="@A1ITFirm" />
-        <meta
-          name="twitter:title"
-          content="A1 IT Firm - Web Development & Digital Marketing Services"
-        />
-        <meta
-          name="twitter:description"
-          content="A1 IT Firm offers professional web development, responsive design, and digital marketing services to help your business grow online. Contact us for custom web solutions and SEO strategies."
-        />
-        <meta
-          name="twitter:image"
-          content="https://cdn.a1itfirm.com/a1-it-firm-logo.png"
-        />{" "}
-        {/* Replace with actual image URL */}
-        {/* Canonical link for the page */}
-        <link rel="canonical" href="https://www.a1itfirm.com" />
-        {/* Viewport settings for mobile responsiveness */}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Helmet>
+  <title>
+    A1 IT Firm | Lead Generation, Web Development & SEO
+  </title>
 
-      <HeroSection></HeroSection>
-      <ServicesSection></ServicesSection>
-      <Pricing></Pricing>
-      <Testimonial></Testimonial>
+  <meta
+    name="description"
+    content="A1 IT Firm specializes in lead generation, supported by expert web development, SEO, and digital marketing services to help businesses grow faster."
+  />
+
+  <meta
+    name="keywords"
+    content="lead generation, A1 IT Firm, web development, SEO, email marketing, digital marketing, responsive websites, custom websites"
+  />
+
+  <meta name="author" content="A1 IT Firm" />
+  <meta name="robots" content="index, follow" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="A1 IT Firm | Lead Generation, Web Development & SEO" />
+  <meta
+    property="og:description"
+    content="Grow your business with A1 IT Firm. Lead generation is our core focus, supported by modern web development and SEO."
+  />
+  <meta property="og:image" content="https://cdn.a1itfirm.com/a1-it-firm-logo.png" />
+  <meta property="og:url" content="https://www.a1itfirm.com/" />
+  <meta property="og:type" content="website" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="A1 IT Firm | Lead Generation, Web Development & SEO" />
+  <meta
+    name="twitter:description"
+    content="A1 IT Firm helps businesses generate leads and grow with strong web development and SEO services."
+  />
+  <meta name="twitter:image" content="https://cdn.a1itfirm.com/a1-it-firm-logo.png" />
+
+  <link rel="canonical" href="https://www.a1itfirm.com/" />
+</Helmet>
+
+
+      <HeroSection />
+      <ServicesSection />
+      <Pricing />
+      <Testimonial />
     </div>
   );
 };

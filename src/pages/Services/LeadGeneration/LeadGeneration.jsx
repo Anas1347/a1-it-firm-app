@@ -25,6 +25,8 @@ const LeadGeneration = () => {
           name="keywords"
           content="lead generation, digital marketing, B2B lead generation, sales leads, inbound marketing, generate leads, target audience"
         />
+
+        {/* Open Graph */}
         <meta
           property="og:title"
           content="Lead Generation Service - A1 IT Firm"
@@ -35,15 +37,37 @@ const LeadGeneration = () => {
         />
         <meta
           property="og:image"
-          content="https://cdn.a1itfirm.com/a1-it-firm-logo.png" // Replace with your image
+          content="https://cdn.a1itfirm.com/a1-it-firm-logo.png"
         />
         <meta
           property="og:url"
           content="https://www.a1itfirm.com/lead-generation"
         />
         <meta property="og:type" content="website" />
+
+        {/* Robots */}
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.a1itfirm.com/lead-generation" />
+
+        {/* Twitter */}
+        <meta
+          name="twitter:title"
+          content="Lead Generation Service - A1 IT Firm"
+        />
+        <meta
+          name="twitter:description"
+          content="Boost your business with A1 IT Firm's expert Lead Generation services. We help you target the right audience and convert them into valuable leads."
+        />
+        <meta
+          name="twitter:image"
+          content="https://cdn.a1itfirm.com/a1-it-firm-logo.png"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        {/* Canonical */}
+        <link
+          rel="canonical"
+          href="https://www.a1itfirm.com/lead-generation"
+        />
       </Helmet>
 
       <div className="bg-gray-100">
@@ -70,14 +94,14 @@ const LeadGeneration = () => {
           <Tabs>
             <TabList className="flex flex-wrap lg:justify-center space-x-6 mb-6 md:space-x-0 md:flex-col lg:flex-row sm:flex-row lg:gap-6 sm:gap-0">
               <Tab
-                className="text-lg font-semibold text-gray-700 p-4 cursor-pointer flex items-center justify-center gap-4 transition-all duration-300 transform  hover:border-b-2 hover:border-blue-600 hover:scale-105 hover:shadow-lg"
+                className="text-lg font-semibold text-gray-700 p-4 cursor-pointer flex items-center justify-center gap-4 transition-all duration-300 transform hover:border-b-2 hover:border-blue-600 hover:scale-105 hover:shadow-lg"
                 selectedClassName="bg-blue-600 text-white font-bold transform scale-105 border-b-4 border-blue-400"
               >
                 <FaAmazon size={34} />
                 <span className="block mt-2 md:inline-block">Amazon Leads</span>
               </Tab>
               <Tab
-                className="text-lg font-semibold text-gray-700 p-4 cursor-pointer flex items-center justify-center gap-4 transition-all duration-300 transform  hover:border-b-2 hover:border-blue-600 hover:scale-105 hover:shadow-lg"
+                className="text-lg font-semibold text-gray-700 p-4 cursor-pointer flex items-center justify-center gap-4 transition-all duration-300 transform hover:border-b-2 hover:border-blue-600 hover:scale-105 hover:shadow-lg"
                 selectedClassName="bg-blue-600 text-white font-bold transform scale-105 border-b-4 border-blue-400"
               >
                 <FaShopify size={34} />
@@ -86,7 +110,7 @@ const LeadGeneration = () => {
                 </span>
               </Tab>
               <Tab
-                className="text-lg font-semibold text-gray-700 p-4 cursor-pointer flex items-center justify-center gap-4 transition-all duration-300 transform  hover:border-b-2 hover:border-blue-600 hover:scale-105 hover:shadow-lg"
+                className="text-lg font-semibold text-gray-700 p-4 cursor-pointer flex items-center justify-center gap-4 transition-all duration-300 transform hover:border-b-2 hover:border-blue-600 hover:scale-105 hover:shadow-lg"
                 selectedClassName="bg-blue-600 text-white font-bold transform scale-105 border-b-4 border-blue-400"
               >
                 <FaMapLocation size={34} />
@@ -99,7 +123,7 @@ const LeadGeneration = () => {
             {/* Content for Each Tab */}
             <div className="text-center mb-8 mt-8">
               <TabPanel>
-                <div className="bg-white p-6 rounded-lg shadow-lg   hover:shadow-2xl  max-w-sm mx-auto">
+                <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl max-w-sm mx-auto">
                   <h2 className="text-2xl font-bold text-blue-600 mb-6">
                     Amazon Leads
                   </h2>
@@ -139,6 +163,7 @@ const LeadGeneration = () => {
                   </ul>
                 </div>
               </TabPanel>
+
               <TabPanel>
                 <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-300 hover:shadow-2xl hover:scale-105 max-w-sm mx-auto">
                   <h2 className="text-2xl font-bold text-blue-600 mb-6">
@@ -186,6 +211,7 @@ const LeadGeneration = () => {
                   </ul>
                 </div>
               </TabPanel>
+
               <TabPanel>
                 <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-300 hover:shadow-2xl hover:scale-105 max-w-sm mx-auto">
                   <h2 className="text-2xl font-bold text-blue-600 mb-6">

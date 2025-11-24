@@ -2,16 +2,6 @@ import React from "react";
 import { Helmet } from "react-helmet";
 
 const Contact = () => {
-  const addressCoordinates = {
-    lat: 23.8103,
-    lng: 90.4125,
-  };
-
-  // Marker component to display a pin on the map
-  const Marker = ({ text }) => (
-    <div className="bg-red-600 text-white p-2 rounded-full">{text}</div>
-  );
-
   return (
     <>
       <Helmet>
@@ -25,6 +15,8 @@ const Contact = () => {
           content="contact, web development services, IT firm, digital marketing, web design, get in touch, business solutions"
         />
         <meta name="robots" content="index, follow" />
+
+        {/* Open Graph */}
         <meta property="og:title" content="Contact Us - A1 IT Firm" />
         <meta
           property="og:description"
@@ -35,13 +27,22 @@ const Contact = () => {
           content="https://cdn.a1itfirm.com/a1-it-firm-logo.png"
         />
         <meta property="og:url" content="https://www.a1itfirm.com/contact" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
         <meta name="twitter:title" content="Contact Us - A1 IT Firm" />
         <meta
           name="twitter:description"
           content="Contact A1 IT Firm for professional web development, SEO, and digital marketing services to elevate your business."
         />
-        <meta name="twitter:image" content="URL_to_image_here" />
+        <meta
+          name="twitter:image"
+          content="https://cdn.a1itfirm.com/a1-it-firm-logo.png"
+        />
         <meta name="twitter:card" content="summary_large_image" />
+
+        {/* Canonical */}
+        <link rel="canonical" href="https://www.a1itfirm.com/contact" />
       </Helmet>
 
       <div className="bg-gray-50 py-16 px-6">
@@ -136,14 +137,17 @@ const Contact = () => {
                 Company Name
               </h4>
               <p className="text-gray-600">A1 IT Firm</p>
+
               <h4 className="text-xl font-semibold text-gray-800 mt-6 mb-4">
                 Email
               </h4>
               <p className="text-gray-600">contact@a1itfirm.com</p>
+
               <h4 className="text-xl font-semibold text-gray-800 mt-6 mb-4">
                 Phone Number
               </h4>
               <p className="text-gray-600">+880 1819946104</p>
+
               <h4 className="text-xl font-semibold text-gray-800 mt-6 mb-4">
                 Address
               </h4>
@@ -159,11 +163,12 @@ const Contact = () => {
               </h2>
               <div className="relative w-full h-96 rounded-lg overflow-hidden">
                 <iframe
+                  title="A1 IT Firm Location on Google Maps"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.887665227924!2d90.37916061536791!3d23.814322984586486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c6c8f72ac1d3%3A0x409c0bfae3b3e65f!2s90%20Shahid%20Faroque%20Rd%2C%20Dhaka%201204!5e0!3m2!1sen!2sbd!4v1634880535144!5m2!1sen!2sbd"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
-                  allowFullScreen=""
+                  allowFullScreen
                   loading="lazy"
                 ></iframe>
               </div>

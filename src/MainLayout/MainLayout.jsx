@@ -5,12 +5,17 @@ import Navbar from "../pages/Shared/Navbar/Navbar";
 
 const MainLayout = () => {
   return (
-    <div>
-      <Navbar></Navbar>
-      <div style={{ minHeight: "calc(100vh - 220px)" }}>
-      <Outlet></Outlet>
-      </div>
-      <Footer></Footer>
+    <div className="min-h-screen flex flex-col">
+
+      <Navbar />
+
+      {/* Add padding-top to avoid overlap with fixed navbar */}
+      <main className="flex-grow pt-10">
+        <Outlet />
+      </main>
+
+      <Footer />
+
     </div>
   );
 };
