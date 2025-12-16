@@ -65,7 +65,7 @@ const AboutUs = () => {
         <meta property="og:url" content="https://www.a1itfirm.com/about-us" />
         <meta property="og:type" content="website" />
 
-        {/* Structured Data: Organization + Team */}
+        {/* Structured Data */}
         <script type="application/ld+json">
           {`
           {
@@ -130,14 +130,13 @@ const AboutUs = () => {
               <p>
                 We specialise in creating targeted, compliant, and
                 conversion-ready lead lists for agencies, SaaS companies,
-                consultants, and sales teams that want predictable growth in the
-                UK market.
+                consultants, and sales teams seeking predictable UK growth.
               </p>
 
               <p>
-                Beyond lead generation, we support our clients with modern web
-                development, SEO, and marketing automation — ensuring every lead
-                has the highest chance of becoming revenue.
+                Alongside lead generation, we provide web development, SEO, and
+                marketing automation — ensuring every lead has the highest
+                chance of becoming revenue.
               </p>
             </div>
           </section>
@@ -153,15 +152,18 @@ const AboutUs = () => {
                 <motion.div
                   key={member.name}
                   className="bg-gray-700 p-6 rounded-lg text-center shadow-md"
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.15 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.45, delay: index * 0.12 }}
                 >
                   <img
                     src={member.image}
                     alt={`${member.name} - ${member.role} at A1 IT Firm`}
+                    width="144"
+                    height="144"
                     loading="lazy"
+                    decoding="async"
                     className="w-36 h-36 object-cover rounded-full mx-auto border-4 border-yellow-400"
                   />
 

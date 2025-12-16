@@ -9,10 +9,31 @@
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicon (Browser & Mobile) -->
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/logo/favicon-a1.png" />
 
-    <!-- Primary SEO -->
+    <!-- ===========================
+         PRELOAD CRITICAL LOTTIES
+         (SPA PERFORMANCE FIX)
+    ============================ -->
+
+    <!-- Hero / Homepage -->
+    <link rel="preload" href="/assets/lottie/sales.json" as="fetch" crossorigin />
+
+    <!-- Services Pages -->
+    <link rel="preload" href="/assets/lottie/lead-generation.json" as="fetch" crossorigin />
+    <link rel="preload" href="/assets/lottie/email-marketing.json" as="fetch" crossorigin />
+    <link rel="preload" href="/assets/lottie/seo.json" as="fetch" crossorigin />
+    <link rel="preload" href="/assets/lottie/web-development.json" as="fetch" crossorigin />
+
+    <!-- Utility Pages -->
+    <link rel="preload" href="/assets/lottie/thankyou.json" as="fetch" crossorigin />
+    <link rel="preload" href="/assets/lottie/lottie.json" as="fetch" crossorigin />
+
+    <!-- ===========================
+         PRIMARY SEO
+    ============================ -->
+
     <title>UK B2B Lead Generation from Companies House Data | A1 IT Firm</title>
 
     <meta
@@ -30,7 +51,10 @@
     <!-- Canonical -->
     <link rel="canonical" href="https://www.a1itfirm.com/" />
 
-    <!-- Open Graph (Social Sharing) -->
+    <!-- ===========================
+         OPEN GRAPH
+    ============================ -->
+
     <meta
       property="og:title"
       content="UK Company House Leads & Targeted B2B Lead Generation | A1 IT Firm"
@@ -47,7 +71,10 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="A1 IT Firm" />
 
-    <!-- Twitter Card -->
+    <!-- ===========================
+         TWITTER CARD
+    ============================ -->
+
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -62,7 +89,11 @@
       content="https://cdn.a1itfirm.com/a1-it-firm-logo.png"
     />
 
-    <!-- JSON-LD: Organization (CRITICAL FOR GOOGLE SEARCH LOGO) -->
+    <!-- ===========================
+         JSON-LD: ORGANIZATION
+         (GOOGLE SEARCH LOGO)
+    ============================ -->
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -85,7 +116,10 @@
       }
     </script>
 
-    <!-- JSON-LD: Website -->
+    <!-- ===========================
+         JSON-LD: WEBSITE
+    ============================ -->
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
