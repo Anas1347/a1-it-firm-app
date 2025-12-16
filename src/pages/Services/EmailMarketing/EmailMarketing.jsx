@@ -1,5 +1,6 @@
 import React from "react";
 import Lottie from "react-lottie";
+import { motion } from "framer-motion";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import { FaBullhorn, FaEnvelopeOpenText, FaUsers } from "react-icons/fa";
 import { Helmet } from "react-helmet";
@@ -71,20 +72,48 @@ const EmailMarketing = () => {
       <div className="bg-gray-100">
         <div className="container mx-auto  py-10 px-6">
           {/* Description Section with Lottie Animation */}
-          <div className="flex  flex-col lg:flex-row items-center justify-between gap-8 mb-12">
-            <div className="text-center lg:text-left flex-1">
-              <h1 className="text-3xl sm:text-4xl font-bold text-green-700 mb-4">
-                Powerful Email Marketing Services
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-12 mb-16">
+            {/* Text Content */}
+            <motion.div
+              className="flex-1 text-center lg:text-left"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-gray-900 mb-5">
+                B2B Email Marketing That
+                <span className="block text-blue-700">
+                  Builds Trust & Converts Leads
+                </span>
               </h1>
-              <p className="text-gray-700 text-lg sm:text-xl mb-6">
-                Engage with your audience and boost sales with our expert email
-                marketing strategies. We create compelling email campaigns that
-                drive results.
+
+              <p className="text-gray-600 text-lg sm:text-xl max-w-xl mx-auto lg:mx-0">
+                We create{" "}
+                <span className="font-semibold text-gray-800">
+                  data-driven email campaigns
+                </span>{" "}
+                designed to nurture prospects, improve engagement, and turn B2B
+                leads into long-term customers — without spam or guesswork.
               </p>
-            </div>
-            <div className="flex-1">
-              <Lottie options={lottieOptions} height={300} width={300} />
-            </div>
+            </motion.div>
+
+            {/* Animation */}
+            <motion.div
+              className="flex-1 flex justify-center"
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
+            >
+              <Lottie
+                options={lottieOptions}
+                height={300}
+                width={300}
+                aria-label="B2B email marketing automation and lead nurturing animation"
+                className="drop-shadow-md"
+              />
+            </motion.div>
           </div>
 
           {/* Tabs with Lead Types */}

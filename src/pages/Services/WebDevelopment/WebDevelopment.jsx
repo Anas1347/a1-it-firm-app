@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "react-lottie";
-import animationData from "/public/assets/lottie/web-development.json";
+import { motion } from "framer-motion";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import { FaDatabase, FaLaptopCode, FaServer } from "react-icons/fa";
 import { Helmet } from "react-helmet";
@@ -72,20 +72,48 @@ const WebDevelopment = () => {
       <div className="bg-gray-100">
         <div className="container mx-auto  py-10 px-6">
           {/* Description Section with Lottie Animation */}
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 mb-12">
-            <div className="text-center lg:text-left flex-1">
-              <h1 className="text-3xl sm:text-4xl font-bold text-blue-700 mb-4">
-                Professional Web Development Services
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-10 mb-14">
+            {/* Text Content */}
+            <motion.div
+              className="flex-1 text-center lg:text-left"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-blue-700 leading-tight mb-4">
+                Web Development That{" "}
+                <span className="text-indigo-600">
+                  Drives Growth & Performance
+                </span>
               </h1>
-              <p className="text-gray-700 text-lg sm:text-xl mb-6">
-                Take your online presence to the next level with our web
-                development services. We build fast, scalable, and visually
-                stunning websites to help you achieve your business goals.
+
+              <p className="text-gray-600 text-lg sm:text-xl max-w-xl mx-auto lg:mx-0 mb-6">
+                We design and develop fast, scalable, and conversion-focused
+                websites that deliver exceptional user experiences and support
+                long-term business growth.
               </p>
-            </div>
-            <div className="flex-1">
-              <Lottie options={lottieOptions} height={300} width={300} />
-            </div>
+
+              <p className="text-sm text-gray-500">
+                Clean code • Modern UI • SEO-ready • Mobile-first
+              </p>
+            </motion.div>
+
+            {/* Animation */}
+            <motion.div
+              className="flex-1 flex justify-center"
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              <Lottie
+                options={lottieOptions}
+                height={300}
+                width={300}
+                aria-label="Modern web development and website design animation"
+              />
+            </motion.div>
           </div>
 
           {/* Tabs with Lead Types */}

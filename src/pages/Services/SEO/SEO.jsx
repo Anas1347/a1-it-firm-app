@@ -1,5 +1,7 @@
 import React from "react";
 import Lottie from "react-lottie";
+import { motion } from "framer-motion";
+
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import { FaGoogle, FaLink, FaSearch } from "react-icons/fa";
 import { Helmet } from "react-helmet";
@@ -73,20 +75,49 @@ const SEO = () => {
       <div className="bg-gray-100">
         <div className="container mx-auto  py-10 px-6">
           {/* Description Section with Lottie Animation */}
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 mb-12">
-            <div className="text-center lg:text-left flex-1">
-              <h1 className="text-3xl sm:text-4xl font-bold text-blue-700 mb-4">
-                Boost Your Online Presence with SEO
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-10 mb-14">
+            {/* Text Content */}
+            <motion.div
+              className="flex-1 text-center lg:text-left"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-blue-700 leading-tight mb-4">
+                SEO Strategies That{" "}
+                <span className="text-indigo-600">
+                  Increase Rankings & Traffic
+                </span>
               </h1>
-              <p className="text-gray-700 text-lg sm:text-xl mb-6">
-                Improve your search rankings and visibility on Google with our
-                expert SEO strategies. We help you grow organic traffic and
-                convert leads into customers.
+
+              <p className="text-gray-600 text-lg sm:text-xl max-w-xl mx-auto lg:mx-0 mb-6">
+                We help businesses rank higher on Google with proven on-page,
+                technical, and content-driven SEO strategies designed to attract
+                qualified organic traffic and convert visitors into customers.
               </p>
-            </div>
-            <div className="flex-1">
-              <Lottie options={lottieOptions} height={300} width={300} />
-            </div>
+
+              <p className="text-sm text-gray-500">
+                Data-driven SEO focused on long-term visibility and sustainable
+                growth.
+              </p>
+            </motion.div>
+
+            {/* Animation */}
+            <motion.div
+              className="flex-1 flex justify-center"
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              <Lottie
+                options={lottieOptions}
+                height={300}
+                width={300}
+                aria-label="Search engine optimization growth animation"
+              />
+            </motion.div>
           </div>
 
           {/* Tabs with Lead Types */}
