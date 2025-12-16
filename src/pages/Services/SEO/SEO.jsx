@@ -1,6 +1,5 @@
 import React from "react";
 import Lottie from "react-lottie";
-import animationData from "../../../assets/seo.json";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import { FaGoogle, FaLink, FaSearch } from "react-icons/fa";
 import { Helmet } from "react-helmet";
@@ -9,25 +8,36 @@ const SEO = () => {
   const lottieOptions = {
     loop: true,
     autoplay: true,
-    animationData: animationData,
+    path: "/assets/lottie/seo.json",
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
   };
-
   return (
     <>
       <Helmet>
-        <title>SEO Service - A1 IT Firm</title>
+        <title>SEO Services for Business Growth | A1 IT Firm</title>
+
         <meta
           name="description"
-          content="A1 IT Firm provides expert SEO services to boost your online visibility, improve rankings, and drive organic traffic. Our SEO strategies are designed to enhance your business growth and online presence."
+          content="A1 IT Firm provides professional SEO services to improve search rankings, increase organic traffic, and strengthen your online visibility through proven, data-driven SEO strategies."
         />
+
         <meta
           name="keywords"
-          content="SEO services, search engine optimization, on-page SEO, off-page SEO, keyword research, SEO strategy, organic traffic, website optimization"
+          content="SEO services, search engine optimization, on-page SEO, off-page SEO, technical SEO, keyword research, organic traffic, A1 IT Firm"
         />
-        <meta property="og:title" content="SEO Services - A1 IT Firm" />
+
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Professional SEO Services | A1 IT Firm"
+        />
         <meta
           property="og:description"
-          content="A1 IT Firm offers specialized SEO services to increase your website's search engine rankings, attract more visitors, and enhance online visibility with customized SEO strategies."
+          content="Improve your website’s rankings and organic traffic with expert SEO services from A1 IT Firm. We deliver sustainable SEO strategies that support long-term business growth."
         />
         <meta
           property="og:image"
@@ -38,7 +48,22 @@ const SEO = () => {
           content="https://www.a1itfirm.com/search-engine-optimization"
         />
         <meta property="og:type" content="website" />
-        <meta name="robots" content="index, follow" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Professional SEO Services | A1 IT Firm"
+        />
+        <meta
+          name="twitter:description"
+          content="Boost rankings and drive organic traffic with professional SEO services tailored for business growth by A1 IT Firm."
+        />
+        <meta
+          name="twitter:image"
+          content="https://cdn.a1itfirm.com/a1-it-firm-logo.png"
+        />
+
         <link
           rel="canonical"
           href="https://www.a1itfirm.com/search-engine-optimization"

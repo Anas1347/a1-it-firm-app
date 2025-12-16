@@ -9,51 +9,54 @@ const AboutUs = () => {
     {
       name: "K. Shamsher Mahmud",
       role: "CEO & Co-Founder",
-      image: "https://pub-bd774e5f93514e74831f91a9cbcaca9c.r2.dev/k-mahmud.jpg",
-      fallback: "https://cdn.a1itfirm.com/k-mahmud.jpg",
+      image: "/assets/team/k-mahmud.jpg",
       linkedin: "https://www.linkedin.com/in/khandaker-mahmud/",
       email: "mailto:mahmud@a1itfirm.com",
     },
     {
       name: "Anas Khan",
       role: "Co-Founder & MERN Developer",
-      image: "https://pub-bd774e5f93514e74831f91a9cbcaca9c.r2.dev/anas-a1.jpg",
-      fallback: "https://cdn.a1itfirm.com/anas-a1.jpg",
+      image: "/assets/team/anas-a1.jpg",
       linkedin: "https://www.linkedin.com/in/anas-khann/",
       email: "mailto:anas@a1itfirm.com",
     },
     {
       name: "Parvej Mosharof",
       role: "Co-Founder & Marketing Director",
-      image: "https://pub-bd774e5f93514e74831f91a9cbcaca9c.r2.dev/parvej.jpg",
-      fallback: "https://cdn.a1itfirm.com/parvej.jpg",
+      image: "/assets/team/parvej.jpg",
       linkedin: "https://www.linkedin.com/in/parvejmosharof/",
       email: "mailto:parvej@a1itfirm.com",
     },
   ];
 
-  const handleImageError = (e, fallback) => {
-    if (e.target.src !== fallback) {
-      e.target.src = fallback;
-    }
-  };
-
   return (
     <>
       <Helmet>
-        <title>About Us - A1 IT Firm</title>
+        <title>
+          About A1 IT Firm | UK B2B Lead Generation & Digital Growth Experts
+        </title>
+
         <meta
           name="description"
-          content="Learn more about A1 IT Firm, a leading provider of professional web development, SEO, and digital marketing services. Our team is committed to helping businesses grow online with custom solutions."
+          content="Learn about A1 IT Firm, a UK-focused B2B lead generation and digital solutions company helping businesses grow using verified Companies House data, SEO, and modern web technologies."
         />
+
         <meta
           name="keywords"
-          content="About A1 IT Firm, web development company, SEO services, digital marketing, web design, software development, professional IT services, business growth"
+          content="About A1 IT Firm, UK B2B lead generation company, Companies House data experts, UK sales leads, digital marketing agency UK"
         />
-        <meta property="og:title" content="About Us - A1 IT Firm" />
+
+        <link rel="canonical" href="https://www.a1itfirm.com/about-us" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="About A1 IT Firm | UK B2B Lead Generation Experts"
+        />
         <meta
           property="og:description"
-          content="Discover the story behind A1 IT Firm, a team of dedicated professionals providing web development, SEO, and digital marketing services to help your business succeed online."
+          content="Meet the team behind A1 IT Firm — specialists in UK B2B lead generation, Companies House data, and digital growth strategies."
         />
         <meta
           property="og:image"
@@ -61,59 +64,127 @@ const AboutUs = () => {
         />
         <meta property="og:url" content="https://www.a1itfirm.com/about-us" />
         <meta property="og:type" content="website" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.a1itfirm.com/about-us" />
+
+        {/* Structured Data: Organization + Team */}
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://www.a1itfirm.com/#organization",
+                "name": "A1 IT Firm",
+                "url": "https://www.a1itfirm.com/",
+                "logo": "https://www.a1itfirm.com/assets/logo/google-search.png",
+                "sameAs": [
+                  "https://www.facebook.com/a1itfirm",
+                  "https://www.linkedin.com/company/a1itfirm"
+                ]
+              },
+              {
+                "@type": "Person",
+                "name": "K. Shamsher Mahmud",
+                "jobTitle": "CEO & Co-Founder",
+                "worksFor": { "@id": "https://www.a1itfirm.com/#organization" },
+                "sameAs": ["https://www.linkedin.com/in/khandaker-mahmud/"]
+              },
+              {
+                "@type": "Person",
+                "name": "Anas Khan",
+                "jobTitle": "Co-Founder & MERN Developer",
+                "worksFor": { "@id": "https://www.a1itfirm.com/#organization" },
+                "sameAs": ["https://www.linkedin.com/in/anas-khann/"]
+              },
+              {
+                "@type": "Person",
+                "name": "Parvej Mosharof",
+                "jobTitle": "Co-Founder & Marketing Director",
+                "worksFor": { "@id": "https://www.a1itfirm.com/#organization" },
+                "sameAs": ["https://www.linkedin.com/in/parvejmosharof/"]
+              }
+            ]
+          }
+          `}
+        </script>
       </Helmet>
 
       <div className="bg-gray-900 text-white py-16 px-6">
-        <div className="container mx-auto flex flex-col lg:flex-row items-center lg:space-x-12">
-          <section className="lg:w-1/2 bg-gray-800 p-10 rounded-lg shadow-lg flex flex-col justify-center">
-            <h1 className="text-4xl font-bold mb-6 ml-6 text-cyan-400">
-              About
-              <span className="text-xl ml-4 font-bold mt-4">
-                <span className="text-blue-600">A1</span>{" "}
-                <span className="text-yellow-600">IT</span>{" "}
-                <span className="text-red-600">Firm</span>
-              </span>
+        <div className="container mx-auto flex flex-col lg:flex-row gap-12 items-start">
+          {/* About Content */}
+          <section className="lg:w-1/2 bg-gray-800 p-10 rounded-xl shadow-lg">
+            <h1 className="text-4xl font-bold mb-6 text-cyan-400">
+              About <span className="text-blue-600">A1</span>{" "}
+              <span className="text-yellow-600">IT</span>{" "}
+              <span className="text-red-600">Firm</span>
             </h1>
 
-            <div className="space-y-4 text-lg md:text-xl text-gray-400 leading-relaxed">
+            <div className="space-y-5 text-lg text-gray-300 leading-relaxed">
               <p>
-                We started with a strong focus on <span className="text-green-400 font-semibold">Lead Generation</span>, helping businesses convert prospects into paying customers through targeted marketing strategies. As we grew, we expanded our expertise to offer a full range of digital solutions, ensuring our clients stay ahead in an evolving market.
+                <strong>A1 IT Firm</strong> is a UK-focused B2B lead generation
+                and digital growth company built to help businesses acquire
+                high-quality prospects using verified{" "}
+                <strong>UK Companies House data</strong>.
               </p>
+
               <p>
-                Today, we provide end-to-end services, from web development and email marketing to SEO, empowering businesses with the tools they need to thrive in the digital landscape.
+                We specialise in creating targeted, compliant, and
+                conversion-ready lead lists for agencies, SaaS companies,
+                consultants, and sales teams that want predictable growth in the
+                UK market.
+              </p>
+
+              <p>
+                Beyond lead generation, we support our clients with modern web
+                development, SEO, and marketing automation — ensuring every lead
+                has the highest chance of becoming revenue.
               </p>
             </div>
           </section>
 
-          <section className="lg:w-1/2 bg-gray-800 p-10 rounded-lg shadow-lg flex flex-col justify-center">
-            <h2 className="text-3xl font-semibold text-cyan-400 mb-6">Meet Our Team</h2>
+          {/* Team Section */}
+          <section className="lg:w-1/2 bg-gray-800 p-10 rounded-xl shadow-lg">
+            <h2 className="text-3xl font-semibold text-cyan-400 mb-8">
+              Meet Our Leadership Team
+            </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {teamMembers.map((member, index) => (
                 <motion.div
-                  key={index}
-                  className="bg-gray-700 p-6 rounded-lg shadow-lg text-center"
-                  initial={{ x: index % 2 === 0 ? -1000 : 1000, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ type: "spring", stiffness: 100, delay: index * 0.2 }}
+                  key={member.name}
+                  className="bg-gray-700 p-6 rounded-lg text-center shadow-md"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.15 }}
                 >
                   <img
                     src={member.image}
-                    alt={member.name}
-                    onError={(e) => handleImageError(e, member.fallback)}
-                    className="w-40 h-40 object-cover rounded-full mx-auto border-4 border-yellow-400"
+                    alt={`${member.name} - ${member.role} at A1 IT Firm`}
+                    loading="lazy"
+                    className="w-36 h-36 object-cover rounded-full mx-auto border-4 border-yellow-400"
                   />
 
-                  <h2 className="text-lg font-bold text-yellow-300 mt-4">{member.name}</h2>
+                  <h3 className="text-lg font-bold text-yellow-300 mt-4">
+                    {member.name}
+                  </h3>
                   <p className="text-sm text-gray-300">{member.role}</p>
 
-                  <div className="flex justify-center mt-2 space-x-4">
-                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-400 text-2xl">
+                  <div className="flex justify-center mt-3 space-x-4">
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${member.name} on LinkedIn`}
+                      className="text-blue-400 text-xl hover:text-blue-300"
+                    >
                       <FaLinkedin />
                     </a>
-                    <a href={member.email} target="_blank" rel="noopener noreferrer" className="text-red-400 text-2xl">
+                    <a
+                      href={member.email}
+                      aria-label={`Email ${member.name}`}
+                      className="text-red-400 text-xl hover:text-red-300"
+                    >
                       <MdEmail />
                     </a>
                   </div>

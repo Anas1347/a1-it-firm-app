@@ -24,9 +24,9 @@ const ServicesSection = () => {
       <h2 className="text-4xl font-bold text-center mb-6 text-blue-600">
         Our Services
       </h2>
-      <h2 className="text-2xl font-semibold text-center mb-8 text-blue-800">
+      <p className="text-2xl font-semibold text-center mb-8 text-blue-800">
         How Does It Work
-      </h2>
+      </p>
 
       <Tabs>
         <TabList className="flex flex-wrap lg:justify-center space-x-6 mb-6 md:space-x-0 md:flex-col lg:flex-row sm:flex-row lg:gap-6 sm:gap-0">

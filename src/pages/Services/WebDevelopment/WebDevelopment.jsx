@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "react-lottie";
-import animationData from "../../../assets/web-development.json";
+import animationData from "/public/assets/lottie/web-development.json";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import { FaDatabase, FaLaptopCode, FaServer } from "react-icons/fa";
 import { Helmet } from "react-helmet";
@@ -9,39 +9,63 @@ const WebDevelopment = () => {
   const lottieOptions = {
     loop: true,
     autoplay: true,
-    animationData: animationData,
+    path: "/assets/lottie/web-development.json",
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
   };
 
   return (
     <>
       <Helmet>
-        <title>Web Development Service - A1 IT Firm</title>
+        <title>Web Development Services | A1 IT Firm</title>
+
         <meta
           name="description"
-          content="A1 IT Firm offers top-notch web development services, specializing in custom websites, e-commerce platforms, and responsive web designs. We turn your ideas into interactive, user-friendly websites."
+          content="A1 IT Firm provides professional web development services, including custom websites, responsive design, and scalable web solutions built to support business growth."
         />
+
         <meta
           name="keywords"
-          content="web development, website design, custom websites, responsive web design, e-commerce development, web solutions, web applications"
+          content="web development services, custom website development, responsive web design, business websites, web applications, A1 IT Firm"
         />
+
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph */}
         <meta
           property="og:title"
-          content="Web Development Services - A1 IT Firm"
+          content="Professional Web Development Services | A1 IT Firm"
         />
         <meta
           property="og:description"
-          content="A1 IT Firm offers expert web development services, including custom websites, e-commerce platforms, and responsive web design to enhance user experience and drive business success."
+          content="Build fast, secure, and scalable websites with A1 IT Firm’s professional web development services designed for modern businesses."
         />
         <meta
           property="og:image"
-          content="https://cdn.a1itfirm.com/a1-it-firm-logo.png" // Replace with your image
+          content="https://cdn.a1itfirm.com/a1-it-firm-logo.png"
         />
         <meta
           property="og:url"
           content="https://www.a1itfirm.com/web-development"
         />
         <meta property="og:type" content="website" />
-        <meta name="robots" content="index, follow" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Professional Web Development Services | A1 IT Firm"
+        />
+        <meta
+          name="twitter:description"
+          content="Custom, responsive, and scalable web development services built to help businesses grow online."
+        />
+        <meta
+          name="twitter:image"
+          content="https://cdn.a1itfirm.com/a1-it-firm-logo.png"
+        />
+
         <link rel="canonical" href="https://www.a1itfirm.com/web-development" />
       </Helmet>
 

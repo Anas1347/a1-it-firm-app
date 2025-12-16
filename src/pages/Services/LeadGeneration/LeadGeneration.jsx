@@ -1,6 +1,5 @@
 import React from "react";
 import Lottie from "react-lottie";
-import animationData from "../../../assets/lead-generation.json";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import { FaAmazon, FaShopify } from "react-icons/fa";
 import { FaMapLocation } from "react-icons/fa6";
@@ -10,30 +9,36 @@ const LeadGeneration = () => {
   const lottieOptions = {
     loop: true,
     autoplay: true,
-    animationData: animationData,
+    path: "/assets/lottie/lead-generation.json",
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
   };
-
   return (
     <>
       <Helmet>
-        <title>Lead Generation Service - A1 IT Firm</title>
+        <title>B2B Lead Generation Services | A1 IT Firm</title>
+
         <meta
           name="description"
-          content="Boost your business with A1 IT Firm's expert Lead Generation services. We help you target the right audience and convert them into valuable leads, accelerating your sales growth."
+          content="Boost your sales pipeline with A1 IT Firm’s professional B2B lead generation services. We help you reach the right decision-makers and convert prospects into qualified leads."
         />
+
         <meta
           name="keywords"
-          content="lead generation, digital marketing, B2B lead generation, sales leads, inbound marketing, generate leads, target audience"
+          content="B2B lead generation, lead generation services, sales leads, prospecting, targeted leads, A1 IT Firm"
         />
+
+        <meta name="robots" content="index, follow" />
 
         {/* Open Graph */}
         <meta
           property="og:title"
-          content="Lead Generation Service - A1 IT Firm"
+          content="B2B Lead Generation Services | A1 IT Firm"
         />
         <meta
           property="og:description"
-          content="Boost your business with A1 IT Firm's expert Lead Generation services. We help you target the right audience and convert them into valuable leads."
+          content="Generate high-quality B2B leads with A1 IT Firm. We focus on targeted outreach and data-driven lead generation strategies that drive real sales growth."
         />
         <meta
           property="og:image"
@@ -45,29 +50,22 @@ const LeadGeneration = () => {
         />
         <meta property="og:type" content="website" />
 
-        {/* Robots */}
-        <meta name="robots" content="index, follow" />
-
         {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Lead Generation Service - A1 IT Firm"
+          content="B2B Lead Generation Services | A1 IT Firm"
         />
         <meta
           name="twitter:description"
-          content="Boost your business with A1 IT Firm's expert Lead Generation services. We help you target the right audience and convert them into valuable leads."
+          content="Professional B2B lead generation services designed to help businesses reach decision-makers and increase conversions."
         />
         <meta
           name="twitter:image"
           content="https://cdn.a1itfirm.com/a1-it-firm-logo.png"
         />
-        <meta name="twitter:card" content="summary_large_image" />
 
-        {/* Canonical */}
-        <link
-          rel="canonical"
-          href="https://www.a1itfirm.com/lead-generation"
-        />
+        <link rel="canonical" href="https://www.a1itfirm.com/lead-generation" />
       </Helmet>
 
       <div className="bg-gray-100">

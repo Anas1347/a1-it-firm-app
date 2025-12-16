@@ -46,7 +46,7 @@ const Navbar = () => {
         <Link to="/" className="navbar-start flex items-center">
           <img
             className="w-8 h-8"
-            src="https://cdn.a1itfirm.com/a1-it-firm-logo.png"
+            src="/assets/logo/a1-it-firm.png"
             alt="A1 IT Firm"
           />
           <p className="text-xl font-bold transition-colors duration-300 m-2 mt-4">

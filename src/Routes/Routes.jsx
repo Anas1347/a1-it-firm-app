@@ -16,6 +16,7 @@ const EmailMarketing = lazy(() =>
 );
 const SEO = lazy(() => import("../pages/Services/SEO/SEO"));
 const Contact = lazy(() => import("../pages/Contact/Contact"));
+const ThankYou = lazy(() => import("../pages/ThankYou/ThankYou")); // <-- added
 const ErrorPage = lazy(() => import("../pages/Error/Error"));
 
 export const router = createBrowserRouter([
@@ -30,6 +31,10 @@ export const router = createBrowserRouter([
       { path: "email-marketing", element: <EmailMarketing /> },
       { path: "search-engine-optimization", element: <SEO /> },
       { path: "contact", element: <Contact /> },
+
+      // 👇 Added Thank You route
+      { path: "thank-you", element: <ThankYou /> },
+
       { path: "*", element: <ErrorPage /> },
     ],
   },

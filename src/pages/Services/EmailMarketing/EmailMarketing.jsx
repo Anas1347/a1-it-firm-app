@@ -1,6 +1,5 @@
 import React from "react";
 import Lottie from "react-lottie";
-import animationData from "../../../assets/email-marketing.json"; // Make sure you have the Lottie animation file
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import { FaBullhorn, FaEnvelopeOpenText, FaUsers } from "react-icons/fa";
 import { Helmet } from "react-helmet";
@@ -9,39 +8,63 @@ const EmailMarketing = () => {
   const lottieOptions = {
     loop: true,
     autoplay: true,
-    animationData: animationData,
+    path: "/assets/lottie/email-marketing.json",
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
   };
 
   return (
     <>
       <Helmet>
-        <title>Email Marketing Service - A1 IT Firm</title>
+        <title>B2B Email Marketing Services | A1 IT Firm</title>
+
         <meta
           name="description"
-          content="Transform your business with A1 IT Firm's expert email marketing services. We design personalized campaigns that engage your audience, boost conversions, and increase ROI."
+          content="Transform your business with A1 IT Firm's expert B2B email marketing services. We design personalized campaigns that engage your audience, boost conversions, and increase ROI."
         />
+
         <meta
           name="keywords"
-          content="email marketing, digital marketing, email campaigns, email list building, marketing automation, personalized emails, email conversion"
+          content="B2B email marketing, email campaigns, lead nurturing, email automation, personalized emails, A1 IT Firm"
         />
+
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph */}
         <meta
           property="og:title"
-          content="Email Marketing Services - A1 IT Firm"
+          content="B2B Email Marketing Services | A1 IT Firm"
         />
         <meta
           property="og:description"
-          content="Transform your business with A1 IT Firm's expert email marketing services. We design personalized campaigns that engage your audience and increase your business's ROI."
+          content="Transform your business with A1 IT Firm's expert B2B email marketing services. We design personalized campaigns that engage your audience and increase ROI."
         />
         <meta
           property="og:image"
-          content="https://cdn.a1itfirm.com/a1-it-firm-logo.png" // Replace with your image
+          content="https://cdn.a1itfirm.com/a1-it-firm-logo.png"
         />
         <meta
           property="og:url"
           content="https://www.a1itfirm.com/email-marketing"
         />
         <meta property="og:type" content="website" />
-        <meta name="robots" content="index, follow" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="B2B Email Marketing Services | A1 IT Firm"
+        />
+        <meta
+          name="twitter:description"
+          content="Professional B2B email marketing campaigns designed to nurture leads, increase engagement, and drive conversions."
+        />
+        <meta
+          name="twitter:image"
+          content="https://cdn.a1itfirm.com/a1-it-firm-logo.png"
+        />
+
         <link rel="canonical" href="https://www.a1itfirm.com/email-marketing" />
       </Helmet>
 
