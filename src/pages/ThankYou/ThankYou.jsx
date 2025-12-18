@@ -6,7 +6,7 @@ const ThankYou = () => {
   const lottieOptions = {
     loop: true,
     autoplay: true,
-    path: "/assets/lottie/thankyou.json",
+    path: "/images/lottie/thankyou.json",
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
@@ -16,7 +16,6 @@ const ThankYou = () => {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-indigo-50 via-gray-50 to-white px-4">
       <div className="w-full max-w-3xl">
         <div className="bg-white shadow-xl rounded-2xl px-6 py-8 sm:px-10 sm:py-12 flex flex-col items-center text-center border border-indigo-50">
-          
           {/* Logo */}
           <div className="mb-4 sm:mb-6">
             <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-indigo-50 flex items-center justify-center shadow-md">

@@ -9,7 +9,7 @@ const WebDevelopment = () => {
   const lottieOptions = {
     loop: true,
     autoplay: true,
-    path: "/assets/lottie/web-development.json",
+    path: "/images/lottie/web-development.json",
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },

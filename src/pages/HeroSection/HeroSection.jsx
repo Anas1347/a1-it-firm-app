@@ -10,7 +10,7 @@ const HeroSection = () => {
   const lottieOptions = {
     loop: true,
     autoplay: true,
-    path: "/assets/lottie/sales.json",
+    path: "/images/lottie/sales.json",
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },

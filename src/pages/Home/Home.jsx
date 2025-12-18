@@ -70,7 +70,7 @@ const Home = () => {
             "@id": "https://www.a1itfirm.com/#organization",
             "name": "A1 IT Firm",
             "url": "https://www.a1itfirm.com/",
-            "logo": "https://www.a1itfirm.com/assets/logo/google-search.png",
+            "logo": "https://www.a1itfirm.com/images/logo/google-search.png",
             "sameAs": [
               "https://www.facebook.com/a1itfirm",
               "https://www.linkedin.com/company/a1itfirm"

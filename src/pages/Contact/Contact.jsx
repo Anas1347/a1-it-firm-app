@@ -64,8 +64,8 @@ const Contact = () => {
             "@id": "https://www.a1itfirm.com/#localbusiness",
             "name": "A1 IT Firm",
             "url": "https://www.a1itfirm.com/contact",
-            "logo": "https://www.a1itfirm.com/assets/logo/google-search.png",
-            "image": "https://www.a1itfirm.com/assets/logo/a1-it-firm.png",
+            "logo": "https://www.a1itfirm.com/images/logo/google-search.png",
+            "image": "https://www.a1itfirm.com/images/logo/a1-it-firm.png",
             "telephone": "+8801819946104",
             "email": "mahmud@a1itfirm.com",
             "address": {

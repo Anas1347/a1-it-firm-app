@@ -9,7 +9,7 @@ const EmailMarketing = () => {
   const lottieOptions = {
     loop: true,
     autoplay: true,
-    path: "/assets/lottie/email-marketing.json",
+    path: "/images/lottie/email-marketing.json",
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },

@@ -10,7 +10,7 @@ const LeadGeneration = () => {
   const lottieOptions = {
     loop: true,
     autoplay: true,
-    path: "/assets/lottie/lead-generation.json",
+    path: "/images/lottie/lead-generation.json",
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },

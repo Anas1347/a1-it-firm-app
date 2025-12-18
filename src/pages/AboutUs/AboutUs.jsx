@@ -9,21 +9,21 @@ const AboutUs = () => {
     {
       name: "K. Shamsher Mahmud",
       role: "CEO & Co-Founder",
-      image: "/assets/team/k-mahmud.jpg",
+      image: "/images/team/k-mahmud.jpg",
       linkedin: "https://www.linkedin.com/in/khandaker-mahmud/",
       email: "mailto:mahmud@a1itfirm.com",
     },
     {
       name: "Anas Khan",
       role: "Co-Founder & MERN Developer",
-      image: "/assets/team/anas-a1.jpg",
+      image: "/images/team/anas-a1.jpg",
       linkedin: "https://www.linkedin.com/in/anas-khann/",
       email: "mailto:anas@a1itfirm.com",
     },
     {
       name: "Parvej Mosharof",
       role: "Co-Founder & Marketing Director",
-      image: "/assets/team/parvej.jpg",
+      image: "/images/team/parvej.jpg",
       linkedin: "https://www.linkedin.com/in/parvejmosharof/",
       email: "mailto:parvej@a1itfirm.com",
     },
@@ -76,7 +76,7 @@ const AboutUs = () => {
                 "@id": "https://www.a1itfirm.com/#organization",
                 "name": "A1 IT Firm",
                 "url": "https://www.a1itfirm.com/",
-                "logo": "https://www.a1itfirm.com/assets/logo/google-search.png",
+                "logo": "https://www.a1itfirm.com/images/logo/google-search.png",
                 "sameAs": [
                   "https://www.facebook.com/a1itfirm",
                   "https://www.linkedin.com/company/a1itfirm"

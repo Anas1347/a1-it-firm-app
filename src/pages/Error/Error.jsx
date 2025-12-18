@@ -7,7 +7,7 @@ const Error = () => {
   const lottieOptions = {
     loop: true,
     autoplay: true,
-    path: "/assets/lottie/lottie.json",
+    path: "/images/lottie/lottie.json",
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },

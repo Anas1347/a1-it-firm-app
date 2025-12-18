@@ -10,7 +10,7 @@ const SEO = () => {
   const lottieOptions = {
     loop: true,
     autoplay: true,
-    path: "/assets/lottie/seo.json",
+    path: "/images/lottie/seo.json",
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
