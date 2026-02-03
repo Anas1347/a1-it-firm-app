@@ -18,7 +18,7 @@ const AboutUs = () => {
     {
       name: "Anas Khan",
       role: "Co-Founder & Full-Stack (MERN) Developer",
-      image: "/images/team/anas-a1.jpg",
+      image: "/images/team/anas-khan-a1.jpg",
       linkedin: "https://www.linkedin.com/in/anas-khann/",
       email: "mailto:anas@a1itfirm.com",
     },
