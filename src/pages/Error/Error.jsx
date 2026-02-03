@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Lottie from "react-lottie";
-
+import { Button3D } from "react-3d-button";
+import "react-3d-button/styles";
 const Error = () => {
   const lottieOptions = {
     loop: true,
@@ -41,11 +42,12 @@ const Error = () => {
         </p>
 
         {/* Back to Home Button */}
-        <Link
-          to="/"
-          className="px-6 py-2 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition-all duration-300"
-        >
-          Back to Home
+        <Link to="/">
+          <Button3D type="error">
+            <span className="px-6 py-2 text-sm font-semibold text-white">
+              Back to Home
+            </span>
+          </Button3D>
         </Link>
       </div>
     </>

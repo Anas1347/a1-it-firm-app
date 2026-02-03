@@ -1,5 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { Button3D } from "react-3d-button";
+import "react-3d-button/styles";
 
 const Contact = () => {
   return (
@@ -156,9 +158,12 @@ const Contact = () => {
               placeholder="How can we help you?"
             ></textarea>
 
-            <button className="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">
-              Send Message
-            </button>
+           <Button3D type="success">
+  <span className="text-sm font-semibold px-4 text-white">
+    Send Message
+  </span>
+</Button3D>
+
           </form>
         </div>
 

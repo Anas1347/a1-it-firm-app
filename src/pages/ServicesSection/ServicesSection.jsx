@@ -1,4 +1,7 @@
 import React from "react";
+import { Button3D } from "react-3d-button";
+import "react-3d-button/styles";
+
 import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 import {
   FaBullhorn,
@@ -62,115 +65,111 @@ const ServicesSection = () => {
           </Tab>
         </TabList>
 
-       <div className="flex justify-center">
-       <TabPanel>
-          <motion.div
-            className="bg-white p-6  rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 max-w-sm"
-            variants={cardVariants}
-            initial="hidden"
-            animate="visible"
-            whileHover={{ scale: 1.05 }}
-          >
-            <div className="flex items-center gap-3 mb-3">
-              <FaChartLine className="text-blue-600 text-2xl" />
-              <h3 className="text-lg font-semibold text-gray-900">
-                Lead Generation
-              </h3>
-            </div>
-            <p className="text-gray-700 text-sm leading-relaxed">
-              Generate high-quality leads through targeted email campaigns and
-              online strategies. Grow your customer base effectively.
-            </p>
-            <Link
-              to="lead-generation"
-              className="inline-block mt-4 text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-300"
+        <div className="flex justify-center">
+          <TabPanel>
+            <motion.div
+              className="bg-white p-6  rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 max-w-sm"
+              variants={cardVariants}
+              initial="hidden"
+              animate="visible"
+              whileHover={{ scale: 1.05 }}
             >
-              Learn More
-            </Link>
-          </motion.div>
-        </TabPanel>
+              <div className="flex items-center gap-3 mb-3">
+                <FaChartLine className="text-blue-600 text-2xl" />
+                <h3 className="text-lg font-semibold text-gray-900">
+                  Lead Generation
+                </h3>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                Generate high-quality leads through targeted email campaigns and
+                online strategies. Grow your customer base effectively.
+              </p>
+              <Link to="lead-generation">
+                <Button3D type="primary">
+                  <span className="text-sm font-semibold px-2">Learn More</span>
+                </Button3D>
+              </Link>
+            </motion.div>
+          </TabPanel>
 
-        <TabPanel>
-          <motion.div
-            className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 max-w-sm"
-            variants={cardVariants}
-            initial="hidden"
-            animate="visible"
-            whileHover={{ scale: 1.05 }}
-          >
-            <div className="flex items-center gap-3 mb-3">
-              <FaCode className="text-green-600 text-2xl" />
-              <h3 className="text-lg font-semibold text-gray-900">
-                Web Development
-              </h3>
-            </div>
-            <p className="text-gray-700 text-sm leading-relaxed">
-              We build responsive, user-friendly websites that enhance your
-              online presence and engagement.
-            </p>
-            <Link
-              to="web-development"
-              className="inline-block mt-4 text-white bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-300"
+          <TabPanel>
+            <motion.div
+              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 max-w-sm"
+              variants={cardVariants}
+              initial="hidden"
+              animate="visible"
+              whileHover={{ scale: 1.05 }}
             >
-              Learn More
-            </Link>
-          </motion.div>
-        </TabPanel>
+              <div className="flex items-center gap-3 mb-3">
+                <FaCode className="text-green-600 text-2xl" />
+                <h3 className="text-lg font-semibold text-gray-900">
+                  Web Development
+                </h3>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                We build responsive, user-friendly websites that enhance your
+                online presence and engagement.
+              </p>
+              <Link to="web-development">
+                <Button3D type="success">
+                  <span className="text-sm font-semibold px-2">Learn More</span>
+                </Button3D>
+              </Link>
+            </motion.div>
+          </TabPanel>
 
-        <TabPanel>
-          <motion.div
-            className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 max-w-sm"
-            variants={cardVariants}
-            initial="hidden"
-            animate="visible"
-            whileHover={{ scale: 1.05 }}
-          >
-            <div className="flex items-center gap-3 mb-3">
-              <FaEnvelope className="text-red-600 text-2xl" />
-              <h3 className="text-lg font-semibold text-gray-900">
-                Email Marketing
-              </h3>
-            </div>
-            <p className="text-gray-700 text-sm leading-relaxed">
-              Execute impactful email marketing campaigns that drive engagement
-              and boost conversions.
-            </p>
-            <Link
-              to="email-marketing"
-              className="inline-block mt-4 text-white bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-300"
+          <TabPanel>
+            <motion.div
+              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 max-w-sm"
+              variants={cardVariants}
+              initial="hidden"
+              animate="visible"
+              whileHover={{ scale: 1.05 }}
             >
-              Learn More
-            </Link>
-          </motion.div>
-        </TabPanel>
+              <div className="flex items-center gap-3 mb-3">
+                <FaEnvelope className="text-red-600 text-2xl" />
+                <h3 className="text-lg font-semibold text-gray-900">
+                  Email Marketing
+                </h3>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                Execute impactful email marketing campaigns that drive
+                engagement and boost conversions.
+              </p>
+              <Link to="email-marketing">
+                <Button3D type="danger">
+                  <span className="text-sm font-semibold px-2">Learn More</span>
+                </Button3D>
+              </Link>
+            </motion.div>
+          </TabPanel>
 
-        <TabPanel>
-          <motion.div
-            className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 max-w-sm"
-            variants={cardVariants}
-            initial="hidden"
-            animate="visible"
-            whileHover={{ scale: 1.05 }}
-          >
-            <div className="flex items-center gap-3 mb-3">
-              <FaSearch className="text-purple-600 text-2xl" />
-              <h3 className="text-lg font-semibold text-gray-900">
-                Search Engine Optimization
-              </h3>
-            </div>
-            <p className="text-gray-700 text-sm leading-relaxed">
-              Improve your website’s ranking with expert SEO strategies to drive
-              organic traffic.
-            </p>
-            <Link
-              to="search-engine-optimization"
-              className="inline-block mt-4 text-white bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-300"
+          <TabPanel>
+            <motion.div
+              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 max-w-sm"
+              variants={cardVariants}
+              initial="hidden"
+              animate="visible"
+              whileHover={{ scale: 1.05 }}
             >
-              Learn More
-            </Link>
-          </motion.div>
-        </TabPanel>
-       </div>
+              <div className="flex items-center gap-3 mb-3">
+                <FaSearch className="text-purple-600 text-2xl" />
+                <h3 className="text-lg font-semibold text-gray-900">
+                  Search Engine Optimization
+                </h3>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                Improve your website’s ranking with expert SEO strategies to
+                drive organic traffic.
+              </p>
+              <Link to="search-engine-optimization">
+                <Button3D type="secondary">
+                  <span className="text-sm font-semibold px-2">Learn More</span>
+                </Button3D>
+              </Link>
+            </motion.div>
+          </TabPanel>
+        </div>
       </Tabs>
     </div>
   );

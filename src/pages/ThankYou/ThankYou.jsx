@@ -1,6 +1,8 @@
 import React from "react";
 import Lottie from "react-lottie";
 import { Link } from "react-router-dom";
+import { Button3D } from "react-3d-button";
+import "react-3d-button/styles";
 
 const ThankYou = () => {
   const lottieOptions = {
@@ -51,19 +53,22 @@ const ThankYou = () => {
           </p>
 
           {/* Buttons */}
+          {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center w-full sm:w-auto">
-            <Link
-              to="/contact"
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 bg-indigo-600 text-white text-sm sm:text-base font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition-all duration-300"
-            >
-              Back to Contact
+            <Link to="/contact" className="w-full sm:w-auto">
+              <Button3D type="primary">
+                <span className="px-6 sm:px-8 py-3 text-sm sm:text-base font-semibold text-white">
+                  Back to Contact
+                </span>
+              </Button3D>
             </Link>
 
-            <Link
-              to="/"
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 border border-gray-300 text-gray-700 text-sm sm:text-base font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
-            >
-              Back to Home
+            <Link to="/" className="w-full sm:w-auto">
+              <Button3D type="error">
+                <span className="px-6 sm:px-8 py-3 text-sm sm:text-base font-semibold text-white">
+                  Back to Home
+                </span>
+              </Button3D>
             </Link>
           </div>
         </div>

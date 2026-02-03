@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaBullhorn, FaLaptopCode, FaMailBulk, FaSearch } from "react-icons/fa";
+import { Button3D } from "react-3d-button";
+import "react-3d-button/styles";
 
 const Pricing = () => {
   return (
@@ -30,11 +32,12 @@ const Pricing = () => {
             strategies, including UK Companies House data and niche
             segmentation.
           </p>
-          <Link
-            to="/lead-generation"
-            className="mt-6 inline-block text-center text-white bg-blue-600 hover:bg-blue-700 px-5 py-2.5 rounded-lg font-medium transition-colors"
-          >
-            View Pricing
+          <Link to="/lead-generation">
+            <Button3D type="primary">
+              <span className="text-sm font-semibold px-2 text-white">
+                View Pricing
+              </span>
+            </Button3D>
           </Link>
         </div>
 
@@ -48,11 +51,12 @@ const Pricing = () => {
             High-performance, responsive websites built to convert visitors into
             leads and support long-term business growth.
           </p>
-          <Link
-            to="/web-development"
-            className="mt-6 inline-block text-center text-white bg-blue-600 hover:bg-blue-700 px-5 py-2.5 rounded-lg font-medium transition-colors"
-          >
-            View Pricing
+          <Link to="/web-development">
+            <Button3D type="success">
+              <span className="text-sm font-semibold px-2 text-white">
+                View Pricing
+              </span>
+            </Button3D>
           </Link>
         </div>
 
@@ -66,11 +70,12 @@ const Pricing = () => {
             Conversion-focused email campaigns designed to nurture prospects,
             increase engagement, and generate qualified B2B leads.
           </p>
-          <Link
-            to="/email-marketing"
-            className="mt-6 inline-block text-center text-white bg-blue-600 hover:bg-blue-700 px-5 py-2.5 rounded-lg font-medium transition-colors"
-          >
-            View Pricing
+          <Link to="/email-marketing">
+            <Button3D type="danger">
+              <span className="text-sm font-semibold px-2 text-white">
+                View Pricing
+              </span>
+            </Button3D>
           </Link>
         </div>
 
@@ -86,11 +91,12 @@ const Pricing = () => {
             Sustainable SEO strategies that improve visibility, attract
             qualified traffic, and support long-term lead generation.
           </p>
-          <Link
-            to="/search-engine-optimization"
-            className="mt-6 inline-block text-center text-white bg-blue-600 hover:bg-blue-700 px-5 py-2.5 rounded-lg font-medium transition-colors"
-          >
-            View Pricing
+          <Link to="/search-engine-optimization">
+            <Button3D type="secondary">
+              <span className="text-sm font-semibold px-2 text-white">
+                View Pricing
+              </span>
+            </Button3D>
           </Link>
         </div>
       </div>

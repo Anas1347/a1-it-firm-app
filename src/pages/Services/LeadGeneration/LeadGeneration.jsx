@@ -5,6 +5,8 @@ import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import { FaAmazon, FaShopify } from "react-icons/fa";
 import { FaMapLocation } from "react-icons/fa6";
 import { Helmet } from "react-helmet";
+import { Button3D } from "react-3d-button";
+import "react-3d-button/styles";
 
 const LeadGeneration = () => {
   const lottieOptions = {
@@ -321,9 +323,11 @@ const LeadGeneration = () => {
                 </ul>
                 <p className="text-2xl font-bold text-blue-600 mb-6">$190/mo</p>
               </div>
-              <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition mt-auto">
-                Select Plan
-              </button>
+              <Button3D type="primary">
+                <span className="px-6 py-2 text-sm font-semibold text-white">
+                  Select Plan
+                </span>
+              </Button3D>
             </div>
 
             {/* Professional Plan */}
@@ -362,9 +366,11 @@ const LeadGeneration = () => {
                 </ul>
                 <p className="text-3xl font-bold mb-6">$850/mo</p>
               </div>
-              <button className="bg-yellow-400 text-gray-800 px-6 py-2 rounded-lg hover:bg-yellow-500 transition mt-auto">
-                Select Plan
-              </button>
+              <Button3D type="warning">
+                <span className="px-6 py-2 text-sm font-semibold text-white">
+                  Talk To Sales
+                </span>
+              </Button3D>
             </div>
 
             {/* Premium Plan */}
@@ -406,9 +412,11 @@ const LeadGeneration = () => {
                   Talk To Sales/mo
                 </p>
               </div>
-              <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition mt-auto">
-                Select Plan
-              </button>
+              <Button3D type="primary">
+                <span className="px-6 py-2 text-sm font-semibold text-white">
+                  Contact Sales
+                </span>
+              </Button3D>
             </div>
           </div>
         </div>

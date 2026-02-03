@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { Button3D } from "react-3d-button";
+import "react-3d-button/styles";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -111,49 +113,63 @@ const Footer = () => {
           </div>
 
           {/* Social & CTA */}
-          <div className="flex flex-col items-center lg:items-start">
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-gray-400 mb-3">
-              Stay Connected
-            </h3>
+         <div className="flex flex-col items-center lg:items-start">
+  <h3 className="text-sm font-semibold uppercase tracking-wide text-gray-400 mb-3">
+    Stay Connected
+  </h3>
 
-            <p className="text-sm text-gray-400 mb-4 max-w-xs text-center lg:text-left">
-              Message us anytime on WhatsApp for quick assistance.
-            </p>
+  <p className="text-sm text-gray-400 mb-4 max-w-xs text-center lg:text-left">
+    Message us anytime on WhatsApp for quick assistance.
+  </p>
 
-            {/* WhatsApp Button */}
-            <a
-              href="https://wa.me/8801819946104?text=Hello%20A1%20IT%20Firm%2C%20I%20would%20like%20a%20free%20consultation."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full text-sm font-medium bg-green-600 hover:bg-green-500 transition-colors duration-200 shadow-md mb-5"
-            >
-              <FaWhatsapp size={18} />
-              Book a Free Consultation
-            </a>
+  {/* WhatsApp Button */}
+  <div className="mb-5">
+    <a
+      href="https://wa.me/8801819946104?text=Hello%20A1%20IT%20Firm%2C%20I%20would%20like%20a%20free%20consultation."
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Button3D type="success">
+        <span className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white">
+          <FaWhatsapp size={18} />
+          Book a Free Consultation
+        </span>
+      </Button3D>
+    </a>
+  </div>
 
-            {/* Social Icons */}
-            <div className="flex items-center gap-4">
-              <a
-                href="https://www.facebook.com/a1itfirm"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-900/40 hover:bg-blue-700/70 text-blue-400 hover:text-white transition-colors duration-200"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="A1 IT Firm on Facebook"
-              >
-                <FaFacebookF size={18} />
-              </a>
+  {/* Social Buttons */}
+  <div className="flex items-center gap-4">
+    {/* Facebook */}
+    <a
+      href="https://www.facebook.com/a1itfirm"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="A1 IT Firm on Facebook"
+    >
+      <Button3D type="primary">
+        <span className="flex items-center justify-center w-10 h-10 text-white">
+          <FaFacebookF size={18} />
+        </span>
+      </Button3D>
+    </a>
 
-              <a
-                href="https://www.linkedin.com/company/a1itfirm"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-900/40 hover:bg-blue-700/70 text-blue-400 hover:text-white transition-colors duration-200"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="A1 IT Firm on LinkedIn"
-              >
-                <FaLinkedinIn size={18} />
-              </a>
-            </div>
-          </div>
+    {/* LinkedIn */}
+    <a
+      href="https://www.linkedin.com/company/a1itfirm"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="A1 IT Firm on LinkedIn"
+    >
+      <Button3D type="error">
+        <span className="flex items-center justify-center w-10 h-10 text-white">
+          <FaLinkedinIn size={18} />
+        </span>
+      </Button3D>
+    </a>
+  </div>
+</div>
+
         </div>
 
         {/* Bottom bar */}

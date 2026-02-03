@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import Lottie from "react-lottie";
 import { motion, useInView } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
+import { Button3D } from "react-3d-button";
+import "react-3d-button/styles";
 
 const HeroSection = () => {
   const sectionRef = useRef(null);
@@ -44,24 +46,14 @@ const HeroSection = () => {
             href="https://wa.me/8801819946104?text=Hello%20A1%20IT%20Firm%2C%20I%20would%20like%20a%20free%20consultation."
             target="_blank"
             rel="noopener noreferrer"
-            className="
-              inline-flex items-center gap-3
-              mt-8
-              px-8 py-4
-              bg-green-500
-              text-white
-              text-lg font-semibold
-              rounded-full
-              shadow-lg
-              hover:bg-green-600
-              hover:shadow-xl
-              active:scale-95
-              transition-all duration-300
-            "
             aria-label="Chat with A1 IT Firm on WhatsApp"
           >
-            <FaWhatsapp className="text-2xl" />
-            Chat on WhatsApp
+            <Button3D type="success">
+              <div className="flex items-center gap-3 px-4 py-1">
+                <FaWhatsapp className="text-2xl" />
+                <span className="text-lg font-semibold">Chat on WhatsApp</span>
+              </div>
+            </Button3D>
           </a>
 
           {/* Secondary text */}

@@ -3,6 +3,8 @@ import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
+import { Button3D } from "react-3d-button";
+import "react-3d-button/styles";
 
 const AboutUs = () => {
   const teamMembers = [
@@ -172,22 +174,28 @@ const AboutUs = () => {
                   </h3>
                   <p className="text-sm text-gray-300">{member.role}</p>
 
-                  <div className="flex justify-center mt-3 space-x-4">
+                  <div className="flex justify-center mt-4 space-x-3">
+                    {/* LinkedIn */}
                     <a
                       href={member.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`${member.name} on LinkedIn`}
-                      className="text-blue-400 text-xl hover:text-blue-300"
                     >
-                      <FaLinkedin />
+                      <Button3D type="success">
+                        <span className="flex items-center justify-center w-10 h-10 text-white">
+                          <FaLinkedin size={18} />
+                        </span>
+                      </Button3D>
                     </a>
-                    <a
-                      href={member.email}
-                      aria-label={`Email ${member.name}`}
-                      className="text-red-400 text-xl hover:text-red-300"
-                    >
-                      <MdEmail />
+
+                    {/* Email */}
+                    <a href={member.email} aria-label={`Email ${member.name}`}>
+                      <Button3D type="warning">
+                        <span className="flex items-center justify-center w-10 h-10 text-white">
+                          <MdEmail size={18} />
+                        </span>
+                      </Button3D>
                     </a>
                   </div>
                 </motion.div>

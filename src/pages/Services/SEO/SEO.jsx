@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import { FaGoogle, FaLink, FaSearch } from "react-icons/fa";
 import { Helmet } from "react-helmet";
+import { Button3D } from "react-3d-button";
+import "react-3d-button/styles";
 
 const SEO = () => {
   const lottieOptions = {
@@ -321,9 +323,11 @@ const SEO = () => {
                 </ul>
                 <p className="text-2xl font-bold text-blue-600 mb-6">$199/mo</p>
               </div>
-              <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition mt-auto">
-                Select Plan
-              </button>
+              <Button3D type="secondary">
+                <span className="px-6 py-2 text-sm font-semibold text-white">
+                  Select Plan
+                </span>
+              </Button3D>
             </div>
 
             {/* Professional Plan */}
@@ -362,9 +366,11 @@ const SEO = () => {
                 </ul>
                 <p className="text-3xl font-bold mb-6">$899/mo</p>
               </div>
-              <button className="bg-yellow-400 text-gray-800 px-6 py-2 rounded-lg hover:bg-yellow-500 transition mt-auto">
-                Select Plan
-              </button>
+              <Button3D type="warning">
+                <span className="px-6 py-2 text-sm font-semibold text-white">
+                  Select Plan
+                </span>
+              </Button3D>
             </div>
 
             {/* Premium Plan */}
@@ -402,9 +408,11 @@ const SEO = () => {
                   Custom Pricing
                 </p>
               </div>
-              <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition mt-auto">
-                Contact Sales
-              </button>
+              <Button3D type="secondary">
+                <span className="px-6 py-2 text-sm font-semibold text-white">
+                  Contact Sales
+                </span>
+              </Button3D>
             </div>
           </div>
         </div>
