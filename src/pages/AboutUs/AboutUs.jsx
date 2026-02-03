@@ -17,7 +17,7 @@ const AboutUs = () => {
     },
     {
       name: "Anas Khan",
-      role: "Co-Founder & MERN Developer",
+      role: "Co-Founder & Full-Stack (MERN) Developer",
       image: "/images/team/anas-a1.jpg",
       linkedin: "https://www.linkedin.com/in/anas-khann/",
       email: "mailto:anas@a1itfirm.com",
@@ -94,7 +94,7 @@ const AboutUs = () => {
               {
                 "@type": "Person",
                 "name": "Anas Khan",
-                "jobTitle": "Co-Founder & MERN Developer",
+                "jobTitle": "Co-Founder & Full-Stack (MERN) Developer",
                 "worksFor": { "@id": "https://www.a1itfirm.com/#organization" },
                 "sameAs": ["https://www.linkedin.com/in/anas-khann/"]
               },
@@ -162,11 +162,18 @@ const AboutUs = () => {
                   <img
                     src={member.image}
                     alt={`${member.name} - ${member.role} at A1 IT Firm`}
-                    width="144"
-                    height="144"
-                    loading="lazy"
+                    className="
+    w-28 h-28
+    object-cover
+    object-top
+    rounded-full
+    mx-auto
+    border-4
+    border-yellow-400
+  "
+                    loading="eager"
+                    fetchpriority="high"
                     decoding="async"
-                    className="w-36 h-36 object-cover rounded-full mx-auto border-4 border-yellow-400"
                   />
 
                   <h3 className="text-lg font-bold text-yellow-300 mt-4">
